@@ -1,0 +1,43 @@
+// Vertical nav menu - includes site menu
+.page-nav {
+  .list-group-flush {
+    border-top: 1px solid $color-gray-lighter;
+  }
+
+  li {
+    border-left: 0;
+    border-right: 0;
+    color: $color-base;
+    word-wrap: break-word;
+
+    &:hover {
+      background-color: $color-gray-light-alt;
+    }
+
+    &.section-header {
+      font-weight: 700;
+    }
+
+    &.active {
+      background-color: #fff;
+      border-color: $color-gray-lighter;
+      border-left: 8px solid $color-primary;
+      color: $color-base;
+      font-weight: $font-weight-bold;
+      padding-left: 0.75rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.bold {
+      font-weight: 700;
+    }
+  }
+}
+
+// Styles specific to in-page navigation
+.page-nav {
+  margin-bottom: 1rem;
+}

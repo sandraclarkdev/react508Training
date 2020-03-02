@@ -1,0 +1,101 @@
+// iQIES theme variables - extended from https://design.cms.gov
+
+// Values defined in XD doc at:
+// https://confluence.hcqis.org/pages/viewpage.action?pageId=20257548
+
+// ====================================================== Colors
+// Primary
+$color-primary: #0071bc;
+$color-primary-darker: #205493;
+$color-primary-darkest: #112e51;
+$color-base: #212121;
+$color-primary-focus: #0096f4;
+
+// Secondary
+$color-primary-alt-dark: #00a6d2;
+$color-primary-alt: #02bfe7;
+$color-primary-alt-light: #9bdaf1;
+$color-primary-alt-lightest: #eaf8fa;
+
+// Background Colors
+$color-gray-light: #aeb0b5;
+$color-gray-lighter: #d6d7d9; // borders (forms, nav, etc)
+$color-gray: #e2e6e9; // form fields
+$color-gray-light-alt: #f1f1f1; // nav hover
+$color-gray-lightest: #f8f8f8;
+$color-gray-alt: #5b616b; // hint text
+$color-gray-dark: #323a45;
+
+// Status Colors
+$color-error-dark: #cd2026;
+$color-error: #e31c3d;
+$color-error-lightest: #f9dede;
+
+$color-warn: #fdb81e;
+$color-warn-lightest: #fff1d2;
+
+$color-success: #2e8540;
+$color-success-lightest: #e7f4e4;
+
+// Special State
+$color-visited: #4c2c92;
+
+// ====================================================== Layout
+$global-min-height: calc(100vh - 285px);
+
+// Padding / Margin
+$margin-small: 1rem;
+$margin-medium: 2rem;
+$margin-large: 3rem;
+
+// ====================================================== Component Colors
+$color-background-dark: $color-primary-darkest;
+$color-heading-inverted: #fff;
+$color-link: $color-primary;
+$color-link-inverted: $color-primary-alt-light;
+$color-breadcrumbs: $color-primary;
+
+// $color-gray-table-border: #dee2e6;
+
+// Box shadow from material design
+$box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
+  0 1px 3px 1px rgba(60, 64, 67, 0.16);
+
+$site-header-box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
+  0 3px 3px -1px rgba(60, 64, 67, 0.16);
+
+$input-focus-box-shadow: 0 0 0 2px #fff, 0 0 0 5px $color-primary-focus;
+
+// ====================================================== Fonts / Typography
+$font-family-base: 'Open Sans', Helvetica, sans-serif;
+
+// ==================================================== Typography
+// NOTE: px sizes based on 16px default * rem modifier
+$font-size-base: 1rem; // 16px
+$font-size-small: 0.9rem; // 14.4 px across all browsers
+$font-size-smaller: 0.85rem; // 13.6px across all browsers
+
+$label-weight: 700;
+
+$heading-title-size: 3rem; // 48px
+$heading-one-size: 2.25rem; // 36px
+$heading-two-size: 1.875rem; // 30px
+$heading-three-size: 1.5rem; // 24px
+$heading-four-size: 1.25rem; // 20px
+$heading-five-size: $font-size-base; // 16px
+$heading-six-size: $font-size-small; // 14px
+
+// ==================================================== Tables
+$table-border-color: $color-gray-light-alt;
+
+// ==================================================== Alerts
+$alert-border-radius: 0;
+$alert-border-width: 0;
+
+// ====================================================== Buttons
+$btn-font-weight: 700;
+$btn-min-width: 112px;
+
+// ====================================================== Cards
+$card-title-size: $heading-three-size;
+$card-header-background: #f0f0f0;

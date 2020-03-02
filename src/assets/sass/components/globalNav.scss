@@ -1,0 +1,93 @@
+.global-nav-menu {
+  background: transparent;
+
+  color: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin: 3rem auto 0;
+  outline: none;
+  padding: 1rem 0;
+  position: relative;
+  transition: all 0.2s ease 0.05s;
+  span {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  svg {
+    color: #999;
+    margin-right: 1rem;
+  }
+  &:hover {
+    background-color: #fafafa;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.15rem #fff, 0 0 0 0.3rem #bbb;
+  }
+}
+.menu {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  left: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  padding: 0.8rem 1rem;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s linear 0.2s;
+  visibility: hidden;
+  width: 100%;
+  will-change: transform;
+  z-index: 2;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(-0.3rem);
+    transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s linear 0s;
+    visibility: visible;
+    ul {
+      display: block;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      top: 0;
+    }
+    li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  a {
+    border: 0.1rem solid transparent;
+    border-radius: 0.2rem;
+    color: #29779e;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: 0.25rem;
+    text-decoration: none;
+    svg {
+      color: #777;
+      margin-right: 0.5rem;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+    &:focus {
+      border-color: #3a8eb8;
+    }
+  }
+}
