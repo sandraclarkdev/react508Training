@@ -2,10 +2,11 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import URIS from 'libraries/constants/uri-constants';
+
+import { PerceivableRoutes } from 'routes/';
+
 import HomePage from 'pages/home/HomePage';
 import PerceivableSubNav from 'pages/perceivable/SubNav';
-import PerceivableHome from 'pages/perceivable/PerceivableHome';
-import PerceivableTextAlt from 'pages/perceivable/1_1/PerceivableTextAlt';
 
 const MainRoutes = () => (
   <div id="main-content">
@@ -13,34 +14,15 @@ const MainRoutes = () => (
       <Route exact path="/">
         <HomePage />
       </Route>
+
       {/* Perceivable */}
-      <Route exact path={URIS.URI_PERCEIVABLE}>
+      <Route path={URIS.URI_PERCEIVABLE}>
         <div className="row">
           <div className="col-md-3">
             <PerceivableSubNav />
           </div>
           <div className="col-md-9">
-            <PerceivableHome />
-          </div>
-        </div>
-      </Route>
-      <Route path={URIS.URI_PERCEIVABLE_TEXTALT}>
-        <div className="row">
-          <div className="col-md-3">
-            <PerceivableSubNav />
-          </div>
-          <div className="col-md-9">
-            <PerceivableTextAlt />
-          </div>
-        </div>
-      </Route>
-      <Route path={URIS.URI_PERCEIVABLE_TEXTALT}>
-        <div className="row">
-          <div className="col-md-3">
-            <PerceivableSubNav />
-          </div>
-          <div className="col-md-9">
-            <PerceivableTextAlt />
+            <PerceivableRoutes />
           </div>
         </div>
       </Route>

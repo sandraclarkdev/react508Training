@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import SubNav from '../../SubNav';
+import SubNav from 'pages/perceivable/SubNav';
 
 import { NonTextPageRoutes } from 'routes/';
 

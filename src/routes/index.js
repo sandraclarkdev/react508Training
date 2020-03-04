@@ -1,5 +1,4 @@
 import MainRoutes from './MainRoutes';
-import NonTextPageRoutes from './NonTextPageRoutes';
-import Routes111 from './1_1_1Routes';
+import PerceivableRoutes from './PerceivableRoutes';
 
-export { MainRoutes, NonTextPageRoutes, Routes111 };
+export { MainRoutes, PerceivableRoutes };

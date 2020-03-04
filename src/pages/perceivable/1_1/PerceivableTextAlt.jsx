@@ -43,7 +43,7 @@ const PerceivableTextAlt = () => {
       <section id="situations">
         <p>
           There are four separate situations that are covered within 1.1.1 Non
-          Text Content. They are:{' '}
+          Text Content. They are:
         </p>
         <ol>
           <li>
@@ -72,10 +72,10 @@ const PerceivableTextAlt = () => {
           <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
         </p>
       </section>
-      <section id="#shortText">
+      <section id="shortText">
         <h3>Short Text Descriptions</h3>
         <p>
-          A short text descriptions can serve the same purpose and same
+          A short text description can serve the same purpose and same
           information as non-text content.
         </p>
         <p>
@@ -89,32 +89,16 @@ const PerceivableTextAlt = () => {
         <AnchorLink href="#longText">Long Text</AnchorLink> techniques should be
         applied.
         <h4>Examples</h4>
-        <ul>
-          <li>
-            <Link to={URIs.URI_PERCEIVABLE_TEXTALT_ALT}>Alternate Text</Link>
-          </li>
-          <li>
-            <Link to={URIs.URI_PERCEIVABLE_TEXTALT_GROUPING}>
-              Grouping items with one description
-            </Link>
-          </li>
-          <li>
-            <Link to={URIs.URI_PERCEIVABLE_TEXTALT_BUTTONS}>
-              Text Alternatives for Images used as Buttons
-            </Link>
-          </li>
-          <li>
-            <Link to={URIs.URI_PERCEIVABLE_TEXTALT_ASCII}>
-              Text Alternatives for text that is used as ASCII art, emoticons
-              and other non-conforming text
-            </Link>
-          </li>
-        </ul>
+        <p>
+          <Link to={URIs.URI_PERCEIVABLE_TEXTALT_SHORT}>
+            Short Description Techniques
+          </Link>
+        </p>
         <p>
           <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
         </p>
       </section>
-      <section id="#longText">
+      <section id="longText">
         <h3>Long Text Descriptions</h3>
         <p>
           A short description can not serve the same purpose and present the
@@ -124,14 +108,14 @@ const PerceivableTextAlt = () => {
           <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
         </p>
       </section>
-      <section id="#control">
+      <section id="control">
         <h3>Controls or User Inputs</h3>
         <p>The Non Text Content is a control or accepts User Input</p>
         <p>
           <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
         </p>
       </section>
-      <section id="#time">
+      <section id="time">
         <h3>Time Based Media</h3>
         <p>
           The Non Text Content is time based media such as live video or audio,
