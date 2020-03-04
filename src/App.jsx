@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import MainNav from './components/nav/MainNav';
 import { MainRoutes } from './routes';
 
+import 'assets/sass/index.scss';
+
+
 function App() {
   return (
-    <div className="App">
-      <header className="col-12">React Accessibility Application</header>
-      <div id="#top">
+    <Fragment>
+      <div className="App">
+        <div id="#virtual-cursor-top" tabIndex="-1" />
+        <header className="col-12">React Accessibility Application</header>
         <MainNav />
         <MainRoutes />
       </div>
@@ -15,7 +19,7 @@ function App() {
           Opens in a new Window
         </span>
       </div>
-    </div>
+    </Fragment>
   );
 }
 

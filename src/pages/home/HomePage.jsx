@@ -6,7 +6,10 @@ const HomePage = () => (
     <h1>Home Page</h1>
     <p>
       This website is designed to help you understand the accessibility
-      requirements and how to use them within React.
+      requirements and how to use them within React. The application is set up
+      itself as an accessible code base that will become more and more usable as
+      more gets added. Each time a guideline is completed, the code base will be
+      tagged to display where it was at the beginning of the project.
     </p>
     <p>
       Section 508 requires an adherence to{' '}

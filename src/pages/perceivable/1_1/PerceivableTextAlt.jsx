@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { AnchorLink, AnchorLinks } from 'components/Links';
+import { AnchorLink, AnchorLinks, BackToTopLink } from 'components/Links';
 import URIs from 'libraries/constants/uri-constants';
 
 const pageAnchors = [
@@ -36,7 +36,7 @@ const PerceivableTextAlt = () => {
           </a>
         </p>
         <p>
-          <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
+          <BackToTopLink />
         </p>
       </section>
 
@@ -69,7 +69,7 @@ const PerceivableTextAlt = () => {
         </ol>
         <h2>Techniques</h2>
         <p>
-          <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
+          <BackToTopLink />
         </p>
       </section>
       <section id="shortText">
@@ -95,7 +95,7 @@ const PerceivableTextAlt = () => {
           </Link>
         </p>
         <p>
-          <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
+          <BackToTopLink />
         </p>
       </section>
       <section id="longText">
@@ -105,6 +105,11 @@ const PerceivableTextAlt = () => {
           same information as the non-text content such as a chart or diagram
         </p>
         <p>
+          <Link to={URIs.URI_PERCEIVABLE_TEXTALT_LONG}>
+            Long Description Techniques
+          </Link>
+        </p>
+        <p>
           <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
         </p>
       </section>
@@ -112,7 +117,12 @@ const PerceivableTextAlt = () => {
         <h3>Controls or User Inputs</h3>
         <p>The Non Text Content is a control or accepts User Input</p>
         <p>
-          <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
+          <Link to={URIs.URI_PERCEIVABLE_TEXTALT_CONTROLS}>
+            Control and Input Techniques
+          </Link>
+        </p>
+        <p>
+          <BackToTopLink />
         </p>
       </section>
       <section id="time">
@@ -123,7 +133,11 @@ const PerceivableTextAlt = () => {
           or exercise or is intended to create a specific sensory experience.
         </p>
         <p>
-          <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
+          At the moment, IQies does not incorporate any time based media in the
+          application, so no techniques are being shown.
+        </p>
+        <p>
+          <BackToTopLink />
         </p>
       </section>
     </Fragment>

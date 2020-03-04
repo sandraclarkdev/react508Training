@@ -13,18 +13,11 @@ let history;
  */
 const oafReactRouterSettings = {
   documentTitle: () => document.title,
-  primaryFocusTarget: '#top',
-  announcePageNavigation: true,
+  primaryFocusTarget: '#virtual-cursor-top',
+  announcePageNavigation: false,
   setPageTitle: false,
 };
 
-/**
- * Creates and returns a `history` object (as produced by the `history` library)
- * with custom project settings and listeners pre-applied.
- *
- * @public
- * @returns {object} A `history` object.
- */
 export default function createHistory() {
   if (!history) {
     history = createBrowserHistory({

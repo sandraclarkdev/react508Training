@@ -1,14 +1,12 @@
 import React, { Fragment } from 'react';
-import { AnchorLink, AnchorLinks } from 'components/Links';
+import { AnchorLinks, BackToTopLink } from 'components/Links';
 
 const PageName = () => {
   return (
     <Fragment>
       <AnchorLinks />
       <h1>Title</h1>
-      <p>
-       Title Info
-      </p>
+      <p>Title Info</p>
       <h2>Criteria </h2>
       <section id="overview">
         <h2>Overview</h2>
@@ -21,21 +19,18 @@ const PageName = () => {
             Understanding Criteria
           </a>
         </p>
-        <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
       </section>
 
       <section id="techniques">
-       <h2>Techniques</h2>
+        <h2>Techniques</h2>
 
-        <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
+        <BackToTopLink />
       </section>
       <section id="#general">
-        <h3>General and HTML Techniques</h3>{' '}
-        <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
+        <h3>General and HTML Techniques</h3> <BackToTopLink />
       </section>
       <section id="#aria">
-        <h3>Aria Techniques</h3>{' '}
-        <AnchorLink href="#top-of-content">Back to Top</AnchorLink>
+        <h3>Aria Techniques</h3> <BackToTopLink />
       </section>
     </Fragment>
   );

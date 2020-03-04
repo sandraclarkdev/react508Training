@@ -1,17 +1,17 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import URIS from 'libraries/constants/uri-constants';
 
 const PerceivableHome = () => {
   return (
     <Fragment>
       <h1>Perceivable Overview</h1>
       <p>
-        {' '}
         For accessibility, Perceivable refers to the fact that content must be
         presentable in ways that they can perceive.{' '}
       </p>
       <p> Different people have different ways of discerning web content. </p>
       <p>
-        {' '}
         A blind person needs to be able to perceive the content via audio.
         Consequently someone who is deaf needs to see it. What about someone who
         is blind and deaf? They need to be able to perceive the content via
@@ -26,7 +26,6 @@ const PerceivableHome = () => {
         content accords to specific guidelines.
       </p>
       <p>
-        {' '}
         Perception isn&#39;t just about visual versus audio though, it also
         encompasses time for someone who might be slower at recognizing
         information and works to make sure that color and size is also not a
@@ -57,6 +56,14 @@ const PerceivableHome = () => {
         audio, foreground sounds are loud enough to be heard easily over
         background sounds.
       </p>
+      <h2>Perceivable GuideLines</h2>
+      <ol start="1.1.1">
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_TEXTALT}>
+            Non-text Content (Level A)
+          </Link>
+        </li>
+      </ol>
     </Fragment>
   );
 };

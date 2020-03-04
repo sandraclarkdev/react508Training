@@ -7,7 +7,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import * as serviceWorker from 'serviceWorker';
 import createHistory from 'libraries/utils/createHistory';
-import 'assets/sass/index.scss';
 
 import App from 'App';
 
