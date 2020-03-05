@@ -21,10 +21,14 @@ const AltAttributeExample = () => {
       </p>
       <p>Good: An Adult hand lightly clasping a baby&lsquo;s fist.</p>
       <p>Bad: Black and White Image - Kids</p>
-      <CodeDisplay codeDescription="Code for image alt text">
-        &lt;img width=&quot;25%&quot; src=&quot;
-        assets/images/AdultChildHands.jpg&quot; alt=&quot;An adult hand lightly
-        clasping a baby&lsquo;s fist.&quot;/&gt;
+      <CodeDisplay codeType="multi" codeDescription="Code for image alt text">
+{`
+<img
+  width="25%"
+  src="assets/images/AdultChildHands.jpg"
+  alt="An adult hand lightly clasping a baby's fist."
+/>
+`}
       </CodeDisplay>
     </section>
   );
