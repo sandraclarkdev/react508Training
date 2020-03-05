@@ -35,31 +35,23 @@ const SVGExample = () => {
         </SvgComponent>
       </div>
       <div className="col-md-6">
-        <CodeDisplay codeDescription="SVG Code Example with Title">
-          &lt;svg version=&quot;1.1&quot; width=&quot;300&quot;
-          height=&quot;200&quot;&gt;
-          <br />
-          {TAB}&lt;title&gt;Red Rectangle&lt;/title&gt;
-          <br />
-          {TAB}&lt;rect <br />
-          {TAB}
-          {TAB}width=&quot;75&quot; <br />
-          {TAB}
-          {TAB}height=&quot;50&quot; <br />
-          {TAB}
-          {TAB}rx=&quot;20&quot; <br />
-          {TAB}
-          {TAB}ry=&quot;20&quot; <br />
-          {TAB}
-          {TAB}fill=&quot;#fc3d03&quot;
-          <br />
-          {TAB}
-          {TAB}stroke=&quot;#872203&quot;
-          <br />
-          {TAB}
-          {TAB}stroke-fill=&quot;1&quot; /&gt;
-          <br />
-          &lt;/svg&gt;
+        <CodeDisplay codeType="multi" codeDescription="SVG Code Example with Title">
+{`
+<svg  version="1.1"
+      width="75"
+      height="55">
+        <title>Red Rectangle</title>
+        <rect
+          width="75"
+          height="50"
+          rx="20"
+          ry="20"
+          fill="#fc3d03"
+          stroke="#872203"
+          stroke-fill="1">
+        </rect>
+</svg>
+`}
         </CodeDisplay>
       </div>
     </section>

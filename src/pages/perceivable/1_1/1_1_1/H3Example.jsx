@@ -23,10 +23,14 @@ const H3Example = () => {
           alt="Submit The Form"
         />
       </div>
-      <CodeDisplay codeDescription="Code for an submit input with a type of image.">
-        &lt;input type=&quot;image&quot; name=&quot;submit&quot;
-        src=&quot;/assets/images/boom.jpg`&quot; alt=&quot;Submit The Form&quot;
-        /&gt;
+      <CodeDisplay codeType="multi" codeDescription="Code for an submit input with a type of image.">
+{`
+<input
+  type="image"
+  name="submit"
+  src={'assets/images/boom.jpg'}
+  alt="Submit The Form"/>
+`}
       </CodeDisplay>
     </Fragment>
   );

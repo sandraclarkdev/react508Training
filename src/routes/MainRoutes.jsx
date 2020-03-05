@@ -18,10 +18,10 @@ const MainRoutes = () => (
       {/* Perceivable */}
       <Route path={URIS.URI_PERCEIVABLE}>
         <div className="bx--row" id="main-content">
-          <div className="bx--col-lg-4">
+          <div className="bx--col-lg-3">
             <PerceivableSubNav />
           </div>
-          <div className="bx--col-lg-8">
+          <div className="bx--col-lg-9">
             <Content>
               <PerceivableRoutes />
             </Content>
