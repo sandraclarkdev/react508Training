@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 import URIS from 'libraries/constants/uri-constants';
-import { TAB } from 'libraries/constants/constants';
 
 import CodeDisplay from 'components/Code/CodeDisplay';
 
@@ -62,71 +61,38 @@ const H2Example = () => {
           <dd>4.46%</dd>
         </dl>
       </p>
-      <CodeDisplay codeDescription="Code for long descriptions using aria-label and aria-describedby">
-        &lt;img
-        <br />
-        {TAB}width=&quot;25%&quot;
-        <br />
-        {TAB}src=
-        {`${process.env.PUBLIC_URL}/assets/images/WebBrowserUsage.png`}
-        <br />
-        {TAB}alt=&quot;&quot;
-        <br />
-        {TAB}aria-label=&quot;Web Browser Shares&quot;
-        <br />
-        {TAB}aria-describedBy=&quot;web-browser-detail&quot; /&gt;
-        <br />
-        {TAB} &lt;p id=&quot;web-browser-detail&quot;
-        className=&quot;hidden&quot;&gt;
-        <br />
-        {TAB}
-        {TAB} Web Browser usage shows the following:
-        <br />
-        {TAB} &lt;dl&gt;
-        <br />
-        {TAB}
-        {TAB} &lt;dt&gt;Chrome&lt;/dt&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dd&gt;29.03% &lt;/dd&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dt&gt;Internet Explorer&lt;/dt&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dd&gt;22.54%&lt;/dd&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dt&gt;FireFox&lt;/dt&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dd&gt;19.26%&lt;/dd&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dt&gt;Safari&lt;/dt&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dd&gt;15.59%&lt;/dd&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dt&gt;Android&lt;/dt&gt;
-        {TAB}
-        {TAB}&lt;dd&gt;4.59%&lt;/dd&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dt&gt;Opera&lt;/dt&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dd&gt;4.53%&lt;/dd&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dt&gt;Other&lt;/dt&gt;
-        <br />
-        {TAB}
-        {TAB}&lt;dd&gt;4.46%&lt;/dd&gt;
-        <br />
-        {TAB}&lt;/dl&gt;
-        <br />
+      <CodeDisplay
+        codeDescription="Code for long descriptions using aria-label and aria-describedby"
+        codeType="multi"
+      >
+        {`
+  <img
+    width="25%"
+    src={'/assets/images/WebBrowserUsage.png'}
+    alt=""
+    aria-label="Web Browser Shares"
+    aria-describedBy="web-browser-detail"
+  />
+  <p id="web-browser-detail" className="hidden">
+    Web Browser usage shows the following:
+    <dl>
+      <dt>Chrome</dt>
+      <dd>29.03% </dd>
+      <dt>Internet Explorer</dt>
+      <dd>22.54%</dd>
+      <dt>FireFox</dt>
+      <dd>19.26%</dd>
+      <dt>Safari</dt>
+      <dd>15.59%</dd>
+      <dt>Android</dt>
+      <dd>4.59%</dd>
+      <dt>Opera</dt>
+      <dd>4.53%</dd>
+      <dt>Other</dt>
+      <dd>4.46%</dd>
+    </dl>
+  </p>
+    `}
       </CodeDisplay>
     </Fragment>
   );
