@@ -22,7 +22,7 @@ const AltAttributeExample = () => {
       <p>Good: An Adult hand lightly clasping a baby&lsquo;s fist.</p>
       <p>Bad: Black and White Image - Kids</p>
       <CodeDisplay codeType="multi" codeDescription="Code for image alt text">
-{`
+        {`
 <img
   width="25%"
   src="assets/images/AdultChildHands.jpg"

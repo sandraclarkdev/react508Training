@@ -92,7 +92,7 @@ const H2Example = () => {
     <dd>4.46%</dd>
   </dl>
 </p>
-`}{' '}
+`}
       </CodeDisplay>
     </Fragment>
   );
