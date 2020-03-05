@@ -1,6 +1,6 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react';
-import { TAB } from 'libraries/constants/constants';
 
 import CodeDisplay from 'components/Code/CodeDisplay';
 import { AnchorLink } from 'components/Links';
@@ -23,16 +23,12 @@ const AsciiArtExample = () => {
         <div>
           Using a &lt;span&gt; with a role of &quot;img&quot; and an aria-label
           <span role="img" aria-label="smile">
+            {' '}
             😀
           </span>
-          <CodeDisplay
-            codeType="multi"
-            codeDescription="Code for a span, role of image with an aria-label of smile"
-          >
+          <CodeDisplay codeDescription="Code for a span, role of image with an aria-label of smile">
             {`
-  <span role="img" aria-label="smile">
-    😀
-  </span>
+<span role="img" aria-label="smile">😀</span>
 `}
           </CodeDisplay>
         </div>
@@ -46,33 +42,43 @@ const AsciiArtExample = () => {
         what the picture is and a link to skip the picture altogether
       </p>
       <div>
-        <p>Figure 1. ASCII Shrug</p>
-        <AnchorLink href="#skipShrug" className="hidden">
-          Skip Ascii Image
-        </AnchorLink>
+        <p>
+          Figure 1. ASCII Shrug
+          <AnchorLink href="#skipShrug" className="hidden">
+            {`  `}Skip Ascii Image
+          </AnchorLink>
+        </p>
         <pre> ¯\_(ツ)_/¯ </pre>
         <span id="skipShrug"> </span>
       </div>
       <CodeDisplay codeType="multi" codeDescription="Code for ASCII Art Skip.">
-{`
-<p>Figure 1. ASCII Shrug</p>
-<AnchorLink href="#skipShrug" className="hidden">
-  Skip Ascii Image
-</AnchorLink>
+        {`
+<p>Figure 1. ASCII Shrug
+  <AnchorLink href="#skipShrug" className="hidden">
+    Skip Ascii Image
+    </AnchorLink>
+</p>
+
+
 <pre> ¯\_(ツ)_/¯ </pre>
-<span id="skipShrug"> </span>
+<span id="skipShrug"></span>
 `}
       </CodeDisplay>
       <p> another way to do it would be to hide the entire image from AT</p>
       <div aria-hidden="true">
-        <p>Figure 1. ASCII Shrug</p>
-        <pre> ¯\_(ツ)_/¯ </pre>
+        <p>
+          Figure 1. ASCII Shrug {'  '}
+          <pre> ¯\_(ツ)_/¯ </pre>
+        </p>
       </div>
-      <CodeDisplay codeType="multi" codeDescription="Code for hiding ASCII art via aria-hidden.">
-{`
-<div aria-hidden="true">
-  <p>Figure 1. ASCII Shrug</p>
-  <pre> ¯\_(ツ)_/¯ </pre>
+      <CodeDisplay
+        codeType="multi"
+        codeDescription="Code for hiding ASCII art via aria-hidden."
+      >
+        {`
+ <div aria-hidden="true">
+  <p>Figure 1. ASCII Shrug
+  <pre > ¯\_(ツ)_/¯ </pre></p>
 </div>
 `}
       </CodeDisplay>

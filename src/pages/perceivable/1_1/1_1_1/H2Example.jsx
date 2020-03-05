@@ -62,37 +62,37 @@ const H2Example = () => {
         </dl>
       </p>
       <CodeDisplay
-        codeDescription="Code for long descriptions using aria-label and aria-describedby"
         codeType="multi"
+        codeDescription="Code for long descriptions using aria-label and aria-describedby"
       >
         {`
-  <img
-    width="25%"
-    src={'/assets/images/WebBrowserUsage.png'}
-    alt=""
-    aria-label="Web Browser Shares"
-    aria-describedBy="web-browser-detail"
-  />
-  <p id="web-browser-detail" className="hidden">
-    Web Browser usage shows the following:
+<img
+  width="25%"
+  src='assets/images/WebBrowserUsage.png'}
+  alt=""
+  aria-label="Web Browser Shares"
+  aria-describedBy="web-browser-detail"
+/>
+<p id="web-browser-detail" className="hidden">
+  Web Browser usage shows the following:
     <dl>
-      <dt>Chrome</dt>
-      <dd>29.03% </dd>
-      <dt>Internet Explorer</dt>
-      <dd>22.54%</dd>
-      <dt>FireFox</dt>
-      <dd>19.26%</dd>
-      <dt>Safari</dt>
-      <dd>15.59%</dd>
-      <dt>Android</dt>
-      <dd>4.59%</dd>
-      <dt>Opera</dt>
-      <dd>4.53%</dd>
-      <dt>Other</dt>
-      <dd>4.46%</dd>
-    </dl>
-  </p>
-    `}
+    <dt>Chrome</dt>
+    <dd>29.03% </dd>
+    <dt>Internet Explorer</dt>
+    <dd>22.54%</dd>
+    <dt>FireFox</dt>
+    <dd>19.26%</dd>
+    <dt>Safari</dt>
+    <dd>15.59%</dd>
+    <dt>Android</dt>
+    <dd>4.59%</dd>
+    <dt>Opera</dt>
+    <dd>4.53%</dd>
+    <dt>Other</dt>
+    <dd>4.46%</dd>
+  </dl>
+</p>
+`}
       </CodeDisplay>
     </Fragment>
   );

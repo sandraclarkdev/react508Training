@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { TAB } from 'libraries/constants/constants';
-
 import CodeDisplay from 'components/Code/CodeDisplay';
 import SvgComponent from 'components/images/SvgComponent';
 
@@ -35,21 +33,24 @@ const SVGExample = () => {
         </SvgComponent>
       </div>
       <div className="col-md-6">
-        <CodeDisplay codeType="multi" codeDescription="SVG Code Example with Title">
-{`
-<svg  version="1.1"
-      width="75"
-      height="55">
-        <title>Red Rectangle</title>
-        <rect
-          width="75"
-          height="50"
-          rx="20"
-          ry="20"
-          fill="#fc3d03"
-          stroke="#872203"
-          stroke-fill="1">
-        </rect>
+        <CodeDisplay
+          codeType="multi"
+          codeDescription="SVG Code Example with Title"
+        >
+          {`
+  <svg
+    version="1.1"
+    width="75"
+    height="55">
+      <title>Red Rectangle</title>
+      <rect width="75"
+            height="50"
+            rx="20"
+            ry="20"
+            fill="#fc3d03"
+            stroke="#872203"
+            stroke-fill="1">
+      </rect>
 </svg>
 `}
         </CodeDisplay>
