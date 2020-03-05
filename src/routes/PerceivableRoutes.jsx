@@ -7,14 +7,12 @@ import { ReturnLink } from 'components/Links';
 
 import PerceivableHome from 'pages/perceivable/PerceivableHome';
 import PerceivableTextAlt from 'pages/perceivable/1_1/PerceivableTextAlt';
-import H1Example from 'pages/perceivable/1_1/1_1_1/H1Example';
-import H2Example from 'pages/perceivable/1_1/1_1_1/H2Example';
-import H3Example from 'pages/perceivable/1_1/1_1_1/H3Example';
+import NonTextHome from 'pages/perceivable/1_1/1_1_1/NonTextHome';
 
 const PerceivableRoutes = () => {
   return (
     <Fragment>
-      <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT_SHORT}>
+      {/* <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT_SHORT}>
         <ReturnLink
           href={URIS.URI_PERCEIVABLE_TEXTALT}
           returnText="1.1 Text Alternatives"
@@ -29,13 +27,13 @@ const PerceivableRoutes = () => {
         >
           <H2Example />
         </ReturnLink>
-      </Route>
-      <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT_CONTROLS}>
+      </Route> */}
+      <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT_NONTEXT}>
         <ReturnLink
           href={URIS.URI_PERCEIVABLE_TEXTALT}
           returnText="1.1 Text Alternatives"
         >
-          <H3Example />
+          <NonTextHome />
         </ReturnLink>
       </Route>
       <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT}>
@@ -47,9 +45,7 @@ const PerceivableRoutes = () => {
         </ReturnLink>
       </Route>
       <Route exact path={URIS.URI_PERCEIVABLE}>
-        <ReturnLink href="/" returnText="Home">
-          <PerceivableHome />
-        </ReturnLink>
+        <PerceivableHome />
       </Route>
     </Fragment>
   );

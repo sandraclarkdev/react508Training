@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const ExternalLink = props => {
   const { to, children } = props;
   return (
     <a href={to} target="blank" aria-describedby="openNewWindow">
-      {children}
+      {children}{' '}
+      <FontAwesomeIcon icon={faExternalLinkAlt} />
     </a>
   );
 };

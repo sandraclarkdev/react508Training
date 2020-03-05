@@ -17,8 +17,17 @@ const PerceivableSubNav = () => {
         <SideNavItem>Perceivable</SideNavItem>
         <SideNavLink href={URIS.URI_PERCEIVABLE}>Overview</SideNavLink>
         <SideNavMenu title="1.1 Text Alternatives" defaultExpanded isActive>
-          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_TEXTALT} title="Understanding Text Alternatives">
+          <SideNavMenuItem
+            href={URIS.URI_PERCEIVABLE_TEXTALT}
+            title="Understanding Text Alternatives"
+          >
             Understanding Text Alternatives
+          </SideNavMenuItem>
+          <SideNavMenuItem
+            href={URIS.URI_PERCEIVABLE_TEXTALT_NONTEXT}
+            title="Non Text Content"
+          >
+            1.1.1 Non-Text Content
           </SideNavMenuItem>
         </SideNavMenu>
 

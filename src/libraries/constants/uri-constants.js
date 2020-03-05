@@ -3,6 +3,7 @@ const PATHS = {
   // PERCEIVABLE
   URI_PERCEIVABLE: '/perceivable',
   URI_PERCEIVABLE_TEXTALT: '/perceivable/1_1',
+  URI_PERCEIVABLE_TEXTALT_NONTEXT: '/perceivable/1_1/1_1_1',
   URI_PERCEIVABLE_TEXTALT_SHORT: '/perceivable/1_1/1_1_1/h1',
   URI_PERCEIVABLE_TEXTALT_LONG: '/perceivable/1_1/1_1_1/h2',
   URI_PERCEIVABLE_TEXTALT_CONTROLS: '/perceivable/1_1/1_1_1/h3',

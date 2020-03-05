@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import URIS from 'libraries/constants/uri-constants';
+import { ExternalLink } from 'components/Links';
 
 const PerceivableHome = () => {
   return (
@@ -8,7 +9,7 @@ const PerceivableHome = () => {
       <h1>Perceivable Overview</h1>
       <p>
         For accessibility, Perceivable refers to the fact that content must be
-        presentable in ways that they can perceive.{' '}
+        presentable in ways that they can perceive.
       </p>
       <p> Different people have different ways of discerning web content. </p>
       <p>
@@ -31,39 +32,65 @@ const PerceivableHome = () => {
         information and works to make sure that color and size is also not a
         barrier to entry.
       </p>
-      <p>
-        <strong>Text Alternatives</strong> - Make sure that anything on the page
-        that is not text can be changed to forms people need.
-      </p>
-      <p>
-        <strong>Time Based Media</strong> - Time based media is anything that is
-        embedded on a website that moves, makes noise, displays content
-        synchronized with another element of the site or displays content that
-        changes without user input.{' '}
-      </p>
-      <p>
-        <strong>Adaptable</strong> - Adaptable mainly means that content can be
-        presented in different ways. It allows a user to know what the document
-        structure of the content is and that AT can read and present it as best
-        for the user. Basically this involves using proper HTML structure for
-        your content and the sequence the content is structured in allows it to
-        be read correctly.
-      </p>
-      <p>
-        <strong>Distinguishable</strong> - Distinguishable content is easier to
-        work for all users. The focus is to make the content as easy to perceive
-        such as making sure colors are able to be distinguished, and that for
-        audio, foreground sounds are loud enough to be heard easily over
-        background sounds.
-      </p>
-      <h2>Perceivable GuideLines</h2>
-      <ol start="1.1.1">
-        <li>
-          <Link to={URIS.URI_PERCEIVABLE_TEXTALT}>
-            Non-text Content (Level A)
-          </Link>
-        </li>
-      </ol>
+
+      <h2>Perceivable Guidelines</h2>
+      <div className="overview-item">
+        <p>
+          <strong>
+            <Link to={URIS.URI_PERCEIVABLE_TEXTALT}>1.1 Text Alternatives</Link>
+          </strong>{' '}
+          - Make sure that anything on the page that is not text can be changed
+          to forms people need.{' '}
+        </p>
+        <p>
+          {' '}
+          <ExternalLink to="https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html">
+            WCAG Understanding Non Text Content
+          </ExternalLink>
+        </p>
+      </div>
+      <div className="overview-item">
+        <p>
+          <strong>1.2 Time Based Media - (TBD)</strong> - Time based media is
+          anything that is embedded on a website that moves, makes noise,
+          displays content synchronized with another element of the site or
+          displays content that changes without user input.{' '}
+        </p>
+        <p>
+          <ExternalLink to="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html">
+            WCAG Understanding Time Based Media
+          </ExternalLink>
+        </p>{' '}
+      </div>
+      <div className="overview-item">
+        <p>
+          <strong>1.3 Adaptable (TBD)</strong> - Adaptable mainly means that
+          content can be presented in different ways. It allows a user to know
+          what the document structure of the content is and that AT can read and
+          present it as best for the user. Basically this involves using proper
+          HTML structure for your content and the sequence the content is
+          structured in allows it to be read correctly.
+        </p>
+        <p>
+          <ExternalLink to="https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html">
+            WCAG Understanding Adaptable
+          </ExternalLink>
+        </p>{' '}
+      </div>
+      <div className="overview-item">
+        <p>
+          <strong>1.4 Distinguishable (TBD)</strong> - Distinguishable content
+          is easier to work for all users. The focus is to make the content as
+          easy to perceive such as making sure colors are able to be
+          distinguished, and that for audio, foreground sounds are loud enough
+          to be heard easily over background sounds.
+        </p>
+        <p>
+          <ExternalLink to="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html">
+            WCAG Understanding Distinguishable
+          </ExternalLink>
+        </p>
+      </div>
     </Fragment>
   );
 };

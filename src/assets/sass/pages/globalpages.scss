@@ -6,6 +6,7 @@
   top: 3.5rem;
 }
 
+/* Side Navigation */
 .bx--side-nav {
   position: relative;
   z-index: 0;
@@ -21,5 +22,13 @@
   &.bx--side-nav__items {
     margin-left: 1.5rem;
     padding: 0;
+  }
+}
+
+/* Overview Pages */
+.overview-item {
+  margin-bottom: 0.95rem;
+  p {
+    margin-bottom: 0.25rem;
   }
 }
