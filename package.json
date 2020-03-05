@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@carbon/grid": "^10.9.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.8",
@@ -18,7 +19,6 @@
     "oaf-react-router": "^2.1.1",
     "path-to-regexp": "^6.1.0",
     "react": "^16.13.0",
-    "react-accessible-dropdown-menu-hook": "^2.0.1",
     "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.0",
     "react-fontawesome": "^1.7.1",

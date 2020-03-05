@@ -1,16 +1,15 @@
 import React, { Fragment } from 'react';
-import MainNav from './components/nav/MainNav';
 import { MainRoutes } from './routes';
 
 import 'assets/sass/index.scss';
-
+import AppHeader from 'components/Header';
 
 function App() {
   return (
     <Fragment>
       <div className="App">
-        <header className="col-12">React Accessibility Application</header>
-        <MainNav />
+        <div id="#virtual-cursor-top" tabIndex="-1" />
+        <AppHeader />
         <MainRoutes />
       </div>
       <div>
