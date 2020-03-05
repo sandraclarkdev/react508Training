@@ -9,7 +9,6 @@ function App() {
   return (
     <Fragment>
       <div className="App">
-        <div id="#virtual-cursor-top" tabIndex="-1" />
         <header className="col-12">React Accessibility Application</header>
         <MainNav />
         <MainRoutes />

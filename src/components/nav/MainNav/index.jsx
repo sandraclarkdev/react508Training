@@ -103,7 +103,7 @@ const navArray = [
 
 const MainNav = () => {
   return (
-    <nav className="global col-12">
+    <nav  id="virtual-cursor-top" tabIndex="-1" className="global col-12">
       <ul>
         <li>
           <Link className="global-nav-menu nav-link btn btn-link" to="/">
