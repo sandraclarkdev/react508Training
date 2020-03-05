@@ -12,9 +12,9 @@ import {
 import URIS from 'libraries/constants/uri-constants';
 
 const AppHeader = () => (
-  <Header aria-label="508 React Training">
+  <Header aria-label="508 React Training" id="virtual-cursor-top">
     <SkipToContent />
-    <HeaderName element={Link} to="/" prefix="a11y">
+    <HeaderName element={Link} to="/" prefix="IQies">
       508 React Training
     </HeaderName>
     <HeaderNavigation aria-label="Main Navigation">

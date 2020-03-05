@@ -1,13 +1,12 @@
-// $feature-flags: (
-//   ui-shell: true,
-// );
+$feature-flags: (
+  ui-shell: true,
+);
+@import '~carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family';
+@import '~carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint';
+@import '~carbon-components/scss/globals/scss/typography';
+@import '~carbon-components/scss/globals/scss/vars';
+@import '~carbon-components/scss/globals/scss/styles';
 
-// @import 'carbon-components/scss/globals/scss/styles';
-
-@import 'global/theme';
-@import 'global/bootstrap-theme';
-@import 'global/index';
-@import 'global/basicstyling';
-@import 'components/globalNav';
-@import 'components/pageNav';
-@import 'components/Links';
+@import './theme';
+@import './global';
+@import './pages/globalpages';

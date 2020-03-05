@@ -1,0 +1,25 @@
+/* stylelint-disable selector-class-pattern */
+
+#main-top {
+  display: block;
+  position: relative;
+  top: 3.5rem;
+}
+
+.bx--side-nav {
+  position: relative;
+  z-index: 0;
+  .bx--side-nav__link > .bx--side-nav__link-text {
+    font-size: 0.75rem;
+  }
+  .bx--side-nav__submenu-title {
+    font-size: 0.8rem;
+  }
+}
+
+.bx--side-nav__items {
+  &.bx--side-nav__items {
+    margin-left: 1.5rem;
+    padding: 0;
+  }
+}

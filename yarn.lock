@@ -1625,6 +1625,14 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@carbon/grid@^10.9.1":
+  version "10.9.1"
+  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.9.1.tgz#cef9b1c0d1e31f8126e8ac6da7834eea17313314"
+  integrity sha512-Hqo2jIG44YluaJ6VaTr6IVTw4q4vGBxQpbD2DVHYbn4R+XVQ5Se918KtZu1r0ZLjnGW4LO7CEzzoiBuFthqYvg==
+  dependencies:
+    "@carbon/import-once" "^10.3.0"
+    "@carbon/layout" "^10.8.1"
+
 "@carbon/icon-helpers@^10.6.0":
   version "10.6.0"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.6.0.tgz#72a5bbd1edbee3728e47fa6d17c2aca67dbb101c"
@@ -1636,6 +1644,16 @@
   integrity sha512-M3K/+FJwKnOdSmjaSaOuhpVxDzfvCsm9W+rbQc8tWwxnb9bdUsgab7wghtEWKxGJmblblVetGTj3E6q9xSLCoQ==
   dependencies:
     "@carbon/icon-helpers" "^10.6.0"
+
+"@carbon/import-once@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.3.0.tgz#58617da4efb6d7a11352d8e6b7209da1d39f364d"
+  integrity sha512-PFk3FhMe3psihYtCg3JsyPHismqglnbUqIpz1DCG5Gn/kt0HdVKhGvHdEq7E305rGoBUCKzMn/4xoY9v9mcmlg==
+
+"@carbon/layout@^10.8.1":
+  version "10.8.1"
+  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.8.1.tgz#23cbfa331824e57a4dce8608a0ec1810832264a1"
+  integrity sha512-If1dzSJx/zAjCuEl6eD+7bj5dqy4dzH+QsEPwW07DnIQg3YBxxifEyZgaPGrDu5HJTL+R2A0YabGxo/DK1aqwQ==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
@@ -10249,11 +10267,6 @@ react-a11y@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-a11y/-/react-a11y-1.1.0.tgz#67bf00dbbdc2d031fc443595d9d5f0a38b7e25e1"
   integrity sha512-96qz+5dMX8kUUQtO54WjeEDualKWKTd034cvN2yICu0wNyDI18JeDiOAxUPGLA/sdWCTCP6ABSicKXdVuLD+bA==
-
-react-accessible-dropdown-menu-hook@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/react-accessible-dropdown-menu-hook/-/react-accessible-dropdown-menu-hook-2.0.1.tgz#118a86e110bcff8a778728c1baf596ce32f3e978"
-  integrity sha512-83GwRso+9qpfoubpztDlSwbaM8LLzTw+d6dthu1eUZB0rSR/ZtpeRW6Gd07tUZ0PWb3I/ua1Y5FUpQ9jxygn/w==
 
 react-app-polyfill@^1.0.6:
   version "1.0.6"
