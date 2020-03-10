@@ -53,7 +53,6 @@ const AsciiDescription = () => {
       >
         {`
  <div aria-hidden="true">
-  <p>Figure 1. ASCII Shrug
   <pre > ¯\_(ツ)_/¯ </pre></p>
 </div>
 `}

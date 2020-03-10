@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
+import CodeDisplay from 'components/Code/CodeDisplay';
+
 const CombinedImageDescription = () => {
   return (
     <section>
@@ -19,19 +21,21 @@ const CombinedImageDescription = () => {
           <FontAwesomeIcon icon={faCoffee} /> Get your Coffee Here
         </button>
       </div>
-      <div aria-label="Code for showing an empty alt attribute when an icon is represented by existing text. Skipped for A T">
-        <div aria-hidden="true">
-          <code>
-            &lt;img src=&quot;assets/images/coffeeicon.jpg&quot;
-            alt=&quot;&quot;/&gt;
-          </code>
-          <p>Or </p>
-          <code>
-            &lt;img src=&quot;assets/images/coffeeicon.jpg&quot;
-            aria-hidden=&quot;true&quot;/&gt;
-          </code>
-        </div>
-      </div>
+      <CodeDisplay
+        codeType="multi"
+        codeDescription="Code for combined image and description"
+      >
+        {`
+<button type="button" classnames="btn-link">
+  <img src="assets/images/coffeeicon.jpg" alt="" /> Get your Coffee Here
+</button>
+Or
+<button type="button" classnames="btn-link">
+  <img src="assets/images/coffeeicon.jpg" aria-hidden="true" />
+  Get your Coffee Here
+</button>
+`}
+      </CodeDisplay>
     </section>
   );
 };

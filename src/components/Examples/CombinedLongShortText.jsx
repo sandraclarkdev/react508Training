@@ -59,8 +59,7 @@ const CombinedLongShortText = () => {
 <img
   width="25%"
   src='assets/images/WebBrowserUsage.png'}
-  alt=""
-  aria-label="Web Browser Shares"
+  alt="Web Browser Shares"
   aria-describedBy="web-browser-detail"
 />
 <p id="web-browser-detail" className="hidden">

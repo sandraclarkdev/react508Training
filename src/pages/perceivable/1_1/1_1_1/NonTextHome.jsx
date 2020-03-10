@@ -5,6 +5,7 @@ import {
   AsciiDescription,
   CombinedImageDescription,
   CombinedLongShortText,
+  ControlButton,
   ControlImage,
   EmojiDescriptions,
   SVGTitle,
@@ -19,7 +20,7 @@ const NonTextHome = () => {
         Text Content. They are:
       </p>
       <section id="short-text">
-        <h2>Short Text for Sandy</h2>
+        <h2>Short Text</h2>
         <p>
           Used when short text descriptions can serve the same purpose and same
           information as non-text content.
@@ -69,8 +70,11 @@ const NonTextHome = () => {
         <h2>Controls and User Inputs</h2>
         <p> Non Text Content is a control or accepts user input.</p>
         <Accordion>
-          <AccordionItem title="Using an Image as a Control">
+          <AccordionItem title="Using an Image in an Input">
             <ControlImage />
+          </AccordionItem>
+          <AccordionItem title="Using an Image in a Button">
+            <ControlButton />
           </AccordionItem>
         </Accordion>
       </section>
