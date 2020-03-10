@@ -3,14 +3,14 @@ import React from 'react';
 import CodeDisplay from 'components/Code/CodeDisplay';
 import SvgComponent from 'components/images/SvgComponent';
 
-const SVGExample = () => {
+const SVGTitle = () => {
   return (
     <section>
-      <h2>SVG</h2>
       <p>
-        SVG requires a title tag underneath a parent. It is best to pass in the
-        title rather than hard coding it so that icons can more accurately
-        describe the function rather than the icon itself.
+        SVG requires a title tag underneath a hierarchical parent within the SVG
+        tag. It is best to pass in the title rather than hard coding it so that
+        icons can more accurately describe the function rather than the icon
+        itself.
       </p>
       <p>
         Inline SVG is more accessible than any other technique such as
@@ -58,4 +58,4 @@ const SVGExample = () => {
     </section>
   );
 };
-export default SVGExample;
+export default SVGTitle;

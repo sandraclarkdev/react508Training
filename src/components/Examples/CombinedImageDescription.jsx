@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-const CombinedImageDescExample = () => {
+const CombinedImageDescription = () => {
   return (
     <section>
       <h3>Image and descriptive code next to each other</h3>
@@ -35,4 +35,4 @@ const CombinedImageDescExample = () => {
     </section>
   );
 };
-export default CombinedImageDescExample;
+export default CombinedImageDescription;

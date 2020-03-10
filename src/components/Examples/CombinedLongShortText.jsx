@@ -1,24 +1,17 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-
-import URIS from 'libraries/constants/uri-constants';
 
 import CodeDisplay from 'components/Code/CodeDisplay';
 
-const H2Example = () => {
+const CombinedLongShortText = () => {
   return (
     <Fragment>
-      <h1>Long Descriptions for Images</h1>
       <p>
         There are situations where we need more than a short description of
         Text. Things like charts, diagrams or explanations that are conveyed via
         images such as how to complete a task. In these cases, the proper way to
         deal with this information is to have a brief description of the text
-        content as detailed in
-        <Link to={URIS.URI_PERCEIVABLE_TEXTALT_SHORT}>
-          Short Text Descriptions
-        </Link>{' '}
-        as well as a long description in aria-describedBy.
+        content as detailed in the short Text Descriptions as well as a long
+        description in aria-describedby.
       </p>
       <p>
         When it comes to charts and diagrams, it is imperative to describe what
@@ -27,19 +20,16 @@ const H2Example = () => {
         Static charts are easier, because someone can simply define the
         information and place it into the proper description.
       </p>
-      <h2>Aria Label and Aria DescribedBy</h2>
       <p>
-        Using <abbr title="Accessible Rich Internet Applications">ARIA</abbr> is
-        the best way to accomplish this. In this situation both aria-label (for
-        the short description ) and aria-describedby (for the longer
-        description) is recommended.
+        The simplest and best way to do this is to use{' '}
+        <abbr title="Accessible Rich Internet Applications">ARIA</abbr> In this
+        situation both the alt attribute (for the short description) and
+        aria-describedby (for the longer description) is recommended.
       </p>
-
       <img
         width="25%"
         src={`${process.env.PUBLIC_URL}/assets/images/WebBrowserUsage.png`}
-        alt=""
-        aria-label="Web Browser Shares"
+        alt="Web Browser Shares"
         aria-describedBy="web-browser-detail"
       />
       <p id="web-browser-detail" className="hidden">
@@ -97,5 +87,4 @@ const H2Example = () => {
     </Fragment>
   );
 };
-
-export default H2Example;
+export default CombinedLongShortText;

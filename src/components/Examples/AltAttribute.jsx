@@ -2,10 +2,9 @@ import React from 'react';
 
 import CodeDisplay from 'components/Code/CodeDisplay';
 
-const AltAttributeExample = () => {
+const AltAttribute = () => {
   return (
     <section>
-      <h3> Image Alt Text</h3>
       <p>
         For most images, alt text is the way to go. If the image you are using
         is an image of something, such as a newspaper photo or image of a piece
@@ -33,4 +32,4 @@ const AltAttributeExample = () => {
     </section>
   );
 };
-export default AltAttributeExample;
+export default AltAttribute;

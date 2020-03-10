@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import URIs from 'libraries/constants/uri-constants';
+import URIS from 'libraries/constants/uri-constants';
 
 const PerceivableTextAlt = () => {
   return (
@@ -23,7 +23,9 @@ const PerceivableTextAlt = () => {
       <section id="wcag111">
         <h3>1.1.1 Non Text Content (Level A)</h3>
         <p>
-          <Link to={URIs.URI_PERCEIVABLE_TEXTALT}> 1.1.1 Non Text Content</Link>{' '}
+          <Link to={URIS.URI_PERCEIVABLE_TEXTALT_NONTEXT}>
+            1.1.1 Non Text Content{' '}
+          </Link>
           is the only Success criteria for 1.1. It requires that all non-text
           content that is presented to the user has a text alternative that
           serves the equivalent purpose <strong>except </strong>

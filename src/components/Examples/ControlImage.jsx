@@ -2,10 +2,9 @@ import React, { Fragment } from 'react';
 
 import CodeDisplay from 'components/Code/CodeDisplay';
 
-const H3Example = () => {
+const ControlImage = () => {
   return (
     <Fragment>
-      <h1>Descriptions for Controls and Inputs</h1>
       <p>
         For the most part labeling and groupings via fieldset / legend are
         sufficient to label form fields. But at some point, someone is going to
@@ -40,4 +39,4 @@ const H3Example = () => {
   );
 };
 
-export default H3Example;
+export default ControlImage;

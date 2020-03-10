@@ -40,10 +40,9 @@ const PerceivableHome = () => {
             <Link to={URIS.URI_PERCEIVABLE_TEXTALT}>1.1 Text Alternatives</Link>
           </strong>{' '}
           - Make sure that anything on the page that is not text can be changed
-          to forms people need.{' '}
+          to forms people need.
         </p>
         <p>
-          {' '}
           <ExternalLink to="https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html">
             WCAG Understanding Non Text Content
           </ExternalLink>
