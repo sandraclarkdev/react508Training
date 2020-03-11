@@ -11,7 +11,7 @@ import {
   SVGTitle,
 } from 'components/Examples';
 
-const NonTextHome = () => {
+const NonText = () => {
   return (
     <Fragment>
       <h1>1.1.1 Non Text Content</h1>
@@ -94,4 +94,4 @@ const NonTextHome = () => {
   );
 };
 
-export default NonTextHome;
+export default NonText;

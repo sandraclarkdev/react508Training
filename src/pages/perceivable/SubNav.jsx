@@ -36,9 +36,12 @@ const PerceivableSubNav = () => {
             Understanding Time Based Media (TBD)
           </SideNavMenuItem>
         </SideNavMenu>
-        <SideNavMenu title="1.3 Adaptable (TBD)">
-          <SideNavMenuItem href="javascript:void(0)">
+        <SideNavMenu title="1.3 Adaptable">
+          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE}>
             Understanding Adaptable
+          </SideNavMenuItem>
+          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>
+            1.3.1 Info and Relationships
           </SideNavMenuItem>
         </SideNavMenu>
         <SideNavMenu title="1.4 Distinguishable (TBD)">

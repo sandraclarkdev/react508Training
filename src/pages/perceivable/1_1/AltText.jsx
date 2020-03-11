@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import URIS from 'libraries/constants/uri-constants';
 
-const PerceivableTextAlt = () => {
+const AltText = () => {
   return (
     <Fragment>
       <h1>1.1 - Text Alternatives</h1>
@@ -38,4 +38,4 @@ const PerceivableTextAlt = () => {
   );
 };
 
-export default PerceivableTextAlt;
+export default AltText;

@@ -6,34 +6,20 @@ import URIS from 'libraries/constants/uri-constants';
 import { ReturnLink } from 'components/Links';
 
 import PerceivableHome from 'pages/perceivable/PerceivableHome';
-import PerceivableTextAlt from 'pages/perceivable/1_1/PerceivableTextAlt';
-import NonTextHome from 'pages/perceivable/1_1/1_1_1/NonTextHome';
+import AltText from 'pages/perceivable/1_1/AltText';
+import NonText from 'pages/perceivable/1_1/1_1_1/NonText';
+import AdaptableOverview from 'pages/perceivable/1_3/AdaptableOverview';
+import InfoRelationships from 'pages/perceivable/1_3/1_3_1/InfoRelationships';
 
 const PerceivableRoutes = () => {
   return (
     <Fragment>
-      {/* <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT_SHORT}>
-        <ReturnLink
-          href={URIS.URI_PERCEIVABLE_TEXTALT}
-          returnText="1.1 Text Alternatives"
-        >
-          <H1Example />
-        </ReturnLink>
-      </Route>
-      <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT_LONG}>
-        <ReturnLink
-          href={URIS.URI_PERCEIVABLE_TEXTALT}
-          returnText="1.1 Text Alternatives"
-        >
-          <H2Example />
-        </ReturnLink>
-      </Route> */}
       <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT_NONTEXT}>
         <ReturnLink
           href={URIS.URI_PERCEIVABLE_TEXTALT}
           returnText="1.1 Text Alternatives"
         >
-          <NonTextHome />
+          <NonText />
         </ReturnLink>
       </Route>
       <Route exact path={URIS.URI_PERCEIVABLE_TEXTALT}>
@@ -41,7 +27,23 @@ const PerceivableRoutes = () => {
           href={URIS.URI_PERCEIVABLE}
           returnText="Perceivable Overview"
         >
-          <PerceivableTextAlt />
+          <AltText />
+        </ReturnLink>
+      </Route>
+      <Route exact path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE}
+          returnText="Adaptable Overview"
+        >
+          <InfoRelationships />
+        </ReturnLink>
+      </Route>
+      <Route exact path={URIS.URI_PERCEIVABLE_ADAPTABLE}>
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE}
+          returnText="Perceivable Overview"
+        >
+          <AdaptableOverview />
         </ReturnLink>
       </Route>
       <Route exact path={URIS.URI_PERCEIVABLE}>
