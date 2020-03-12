@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
-import { Accordion, AccordionItem } from 'carbon-components-react';
+import { Link } from 'react-router-dom';
+
+import URIS from 'libraries/constants/uri-constants';
 
 const InfoRelationships = () => {
   return (
@@ -34,10 +36,53 @@ const InfoRelationships = () => {
         also use ARIA techniques to enhance understanding as well.
       </p>
       <h3>Separating information and Structure from Presentation</h3>
-      <h4>Semantic Elements</h4>
-      <h4>Semantic markup for Color Cues</h4>
-      <h4>CSS</h4>
-      <h4>Emphasized Text</h4>
+      <ul className="item-link-nav">
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_SEMANTIC}>
+            Semantic HTML is the Key to Good Accessibility.
+          </Link>
+        </li>
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_CSS}>
+            Learn about Separating Structure and Presentation using CSS
+          </Link>
+        </li>
+      </ul>
+      <h3>Using Regions and Headings for Navigation and Structure</h3>
+      <ul className="item-link-nav">
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_REGIONS}>Regions</Link>
+        </li>
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_HEADINGs}>
+            Headings
+          </Link>
+        </li>
+      </ul>
+      <h3>Structure with Controls, Tables, Forms and Lists</h3>
+      <ul className="item-link-nav">
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_CONTROLS}>
+            Controls
+          </Link>
+        </li>
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_TABLES}>Tables</Link>
+        </li>
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_FORMS}>Forms</Link>
+        </li>
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_LISTS}>Lists</Link>
+        </li>
+      </ul>
+      <h3>How to provide information when semantic structure is unavailable</h3>
+      <ul className="item-link-nav">
+        <li>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_TEXT}>Text</Link>
+        </li>
+      </ul>
+
       <h3>Regions</h3>
       <h4>ARia Landmarks</h4>
       <h4>Region Role</h4>
@@ -67,7 +112,8 @@ const InfoRelationships = () => {
       <h4>Creating a View version of a Form using DL</h4>
       <h4>Grouping related links in a Nav Element</h4>
       <h2>
-        Cannot use semantic structure to convey information and relationships.
+        What do do when you cannot use semantic structure to convey information
+        and relationships.
       </h2>
       <h3>
         Information in text is conveyed through both structural formatting and

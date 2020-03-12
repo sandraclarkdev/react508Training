@@ -4,15 +4,18 @@ import { CodeSnippet } from 'carbon-components-react';
 
 const CodeDisplay = props => {
   const { codeDescription, codeType, children } = props;
+
   if (codeType === 'inline') {
-    return <CodeSnippet type="{codeType}">{children}</CodeSnippet>;
+    return <CodeSnippet type="inline">{children}</CodeSnippet>;
   }
-  return (
-    <div>
-      <p className="hidden">{`${codeDescription} - skipped for A T`}</p>
-      <CodeSnippet type={codeType}>{children}</CodeSnippet>
-    </div>
-  );
+  if (codeType === 'multi') {
+    return (
+      <div>
+        <p className="hidden">{`${codeDescription} - skipped for A T`}</p>
+        <CodeSnippet type="multi">{children}</CodeSnippet>
+      </div>
+    );
+  }
 };
 
 CodeDisplay.propTypes = {

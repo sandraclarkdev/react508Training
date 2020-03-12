@@ -23,14 +23,42 @@ h3 {
   font-size: 1.2rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 1.1em 0;
+}
+form {
+  border: 0.1rem solid #ccc;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
 p {
   line-height: 1.55;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
 .btn {
   cursor: pointer;
 }
 
+.required-field {
+  color: rgba(255, 0, 0, 0.514);
+  font-size: 101%;
+}
+.label-right {
+  padding-right: 1rem;
+  text-align: right;
+}
 #main-top {
   margin: 1rem;
+}
+
+.item-link-nav {
+  font-size: 1rem;
+  margin: 1rem;
+  li {
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+  }
 }
