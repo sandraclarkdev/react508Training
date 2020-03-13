@@ -27,7 +27,11 @@ const AsciiDescription = () => {
         </p>
         <span id="skipShrug"> </span>
       </div>
-      <CodeDisplay codeType="multi" codeDescription="Code for ASCII Art Skip.">
+      <CodeDisplay
+        id="ascii-image"
+        codeType="multi"
+        codeDescription="Code for ASCII Art Skip."
+      >
         {`
 <p>Figure 1. ASCII Shrug
   <AnchorLink href="#skipShrug" className="hidden">
@@ -48,6 +52,7 @@ const AsciiDescription = () => {
         </p>
       </div>
       <CodeDisplay
+        id="skip-aria-hidden"
         codeType="multi"
         codeDescription="Code for hiding ASCII art via aria-hidden."
       >

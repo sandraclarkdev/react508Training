@@ -52,6 +52,7 @@ const CombinedLongShortText = () => {
         </dl>
       </p>
       <CodeDisplay
+        id="long-desc"
         codeType="multi"
         codeDescription="Code for long descriptions using aria-label and aria-describedby"
       >

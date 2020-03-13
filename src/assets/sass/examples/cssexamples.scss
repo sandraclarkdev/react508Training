@@ -1,0 +1,38 @@
+.summary-bar-enclosure {
+  align-items: stretch !important;
+  display: flex !important;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.summary-bar {
+  align-items: stretch !important;
+  min-height: 80px;
+}
+
+.summary-bar-item {
+  border-right: 1px solid #d6d7d9;
+
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  &:first-of-type {
+    padding-left: 0;
+  }
+  h3 {
+    color: #5b616b;
+    font-size: 0.875rem;
+    margin: 0;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 0.875rem;
+    line-height: 1;
+    margin: 0 0 0.5rem;
+  }
+}

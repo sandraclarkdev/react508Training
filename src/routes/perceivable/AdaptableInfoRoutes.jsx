@@ -17,41 +17,83 @@ import TextOverview from 'pages/perceivable/1_3/1_3_1/text';
 
 const AdaptableInfoRoutes = () => {
   return (
-    <ReturnLink
-      href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
-      returnText="Info and Relationships"
-    >
+    <Fragment>
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_SEMANTIC}>
-        <SemanticOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <SemanticOverview />
+        </ReturnLink>
       </Route>
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_CSS}>
-        <CSSOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <CSSOverview />
+        </ReturnLink>
       </Route>
 
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_REGIONS}>
-        <RegionOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <RegionOverview />
+        </ReturnLink>
       </Route>
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_HEADINGS}>
-        <HeadingOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <HeadingOverview />
+        </ReturnLink>
       </Route>
 
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_CONTROLS}>
-        <ControlOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <ControlOverview />
+        </ReturnLink>
       </Route>
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_TABLES}>
-        <TableOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <TableOverview />
+        </ReturnLink>
       </Route>
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_FORMS}>
-        <FormOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <FormOverview />
+        </ReturnLink>
       </Route>
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_LISTS}>
-        <ListOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <ListOverview />
+        </ReturnLink>
       </Route>
 
       <Route path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_TEXT}>
-        <TextOverview />
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}
+          returnText="Info and Relationships"
+        >
+          <TextOverview />
+        </ReturnLink>
       </Route>
-    </ReturnLink>
+    </Fragment>
   );
 };
 export default AdaptableInfoRoutes;

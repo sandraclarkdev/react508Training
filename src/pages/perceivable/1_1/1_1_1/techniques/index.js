@@ -5,7 +5,6 @@ import CombinedLongShortText from './CombinedLongShortText';
 import ControlButton from './ControlButton';
 import ControlImage from './ControlImage';
 import EmojiDescriptions from './EmojiDescriptions';
-import RequiredFormFields from './RequiredFormFields';
 import SVGTitle from './SVGTitle';
 
 export {
@@ -16,6 +15,5 @@ export {
   ControlButton,
   ControlImage,
   EmojiDescriptions,
-  RequiredFormFields,
   SVGTitle,
 };

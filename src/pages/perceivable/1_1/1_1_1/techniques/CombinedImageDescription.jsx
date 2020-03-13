@@ -22,6 +22,7 @@ const CombinedImageDescription = () => {
         </button>
       </div>
       <CodeDisplay
+        id="image-desc"
         codeType="multi"
         codeDescription="Code for combined image and description"
       >

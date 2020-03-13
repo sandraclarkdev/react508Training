@@ -31,6 +31,7 @@ const PerceivableRoutes = () => {
           <AltText />
         </ReturnLink>
       </Route>
+      <AdaptableInfoRoutes />
       <Route exact path={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>
         <ReturnLink
           href={URIS.URI_PERCEIVABLE_ADAPTABLE}
@@ -39,7 +40,6 @@ const PerceivableRoutes = () => {
           <InfoRelationships />
         </ReturnLink>
       </Route>
-      <AdaptableInfoRoutes />
 
       <Route exact path={URIS.URI_PERCEIVABLE_ADAPTABLE}>
         <ReturnLink

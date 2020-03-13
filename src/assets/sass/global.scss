@@ -9,6 +9,14 @@
   width: 1px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #0071bc;
+}
+
 h1 {
   font-size: 1.5rem;
 }
@@ -26,6 +34,10 @@ h3 {
 h4 {
   font-size: 1.2rem;
   font-style: italic;
+  margin: 1.1em 0;
+}
+
+h5 {
   margin: 1.1em 0;
 }
 form {
@@ -61,4 +73,30 @@ p {
     margin-bottom: 0.5rem;
     text-decoration: underline;
   }
+}
+
+blockquote {
+  border-left: solid 0.5em #0071bc;
+  font-size: 1.3rem;
+  line-height: 1.25rem;
+  margin: 1rem 2rem;
+  padding-left: 1rem;
+  width: 80%;
+
+  &:first-child ::before {
+    content: '"';
+  }
+  &:last-child ::after {
+    content: '"';
+  }
+}
+sup, sub{
+  font-size: 0.8rem;
+  position: relative;
+}
+sup {
+  top: -0.1rem;
+}
+sub {
+  top: 0.1rem;
 }

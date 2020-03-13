@@ -34,6 +34,7 @@ const SVGTitle = () => {
       </div>
       <div className="col-md-6">
         <CodeDisplay
+          id="svg-code"
           codeType="multi"
           codeDescription="SVG Code Example with Title"
         >

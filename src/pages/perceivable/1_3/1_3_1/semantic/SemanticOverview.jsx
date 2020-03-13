@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Accordion, AccordionItem } from 'carbon-components-react';
 
-import { RequiredFormFields } from 'components/Examples';
+import { RequiredFormFields, EmphasizedText } from './techniques';
 
 const SemanticOverview = () => {
   return (
@@ -31,10 +31,41 @@ const SemanticOverview = () => {
       </p>
       <Accordion>
         <AccordionItem title="Emphasizing Required Form Fields">
+          <div className="bx--row">
+            <div className="bx--col-lg-12">
+              <p>
+                It is quite common to show a red asterisk next to a required
+                form field. The issue is that for a non-sighted users, the
+                asterisk doesn&apos;t mean much and could be overlooked.
+              </p>
+              <p>
+                We need to use a combination of both aria attributes and an
+                off-left CSS technique to make the information available to
+                everyone in the way that best conveys the information to each
+                type of user.
+              </p>
+            </div>
+          </div>
           <RequiredFormFields />
         </AccordionItem>
       </Accordion>
-      <h5>Emphasized Text</h5>
+      <div className="bx--row">
+        <div className="bx--col-lg-12">
+          <h5>Emphasizing Text Structurally</h5>
+          <p>
+            We tend to think about emphasizing text via visual cues only. But
+            HTML allows us to emphasize text via specific HTML tags which will
+            allow AT to also emphasize by either using a different physical
+            representation or possibly changing a voice or audio cue to give
+            auditory emphasis as well.
+          </p>
+          <p>
+            These elements are lesser known, but should be used when the intent
+            is to emphasize the structure of the text.
+          </p>
+        </div>
+      </div>
+      <EmphasizedText />
     </Fragment>
   );
 };

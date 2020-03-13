@@ -9,7 +9,7 @@ import {
   ControlImage,
   EmojiDescriptions,
   SVGTitle,
-} from 'components/Examples';
+} from './techniques';
 
 const NonText = () => {
   return (

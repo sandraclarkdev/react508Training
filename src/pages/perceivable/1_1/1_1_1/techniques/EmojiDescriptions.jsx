@@ -23,7 +23,10 @@ const EmojiDescriptions = () => {
             {' '}
             😀
           </span>
-          <CodeDisplay codeDescription="Code for a span, role of image with an aria-label of smile">
+          <CodeDisplay
+            id="emoji"
+            codeDescription="Code for a span, role of image with an aria-label of smile"
+          >
             {`
 <span role="img" aria-label="smile">😀</span>
 `}

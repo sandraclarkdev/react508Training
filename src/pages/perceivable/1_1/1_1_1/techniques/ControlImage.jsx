@@ -23,6 +23,7 @@ const ControlImage = () => {
         />
       </div>
       <CodeDisplay
+        id="input-image"
         codeType="multi"
         codeDescription="Code for an submit input with a type of image."
       >

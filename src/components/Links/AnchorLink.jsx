@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 
 const AnchorLink = props => {
-  const { href, classnames, children } = props;
+  const { href, classnames, children} = props;
   const scrollToId = () => {
     const el = document.getElementById(href.slice(1));
     if (el) {
@@ -12,20 +12,12 @@ const AnchorLink = props => {
     }
   };
 
-  if (classnames) {
-    return (
-      <div className={classnames}>
-        {' '}
-        <HashLink to={href} scroll={scrollToId(href)}>
-          {children}
-        </HashLink>
-      </div>
-    );
-  }
   return (
-    <HashLink to={href} scroll={scrollToId(href)}>
-      {children}
-    </HashLink>
+    <div className={classnames}>
+      <HashLink to={href} scroll={scrollToId(href)}>
+        {children}
+      </HashLink>
+    </div>
   );
 };
 

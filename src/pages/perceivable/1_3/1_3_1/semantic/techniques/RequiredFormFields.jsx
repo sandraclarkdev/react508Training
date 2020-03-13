@@ -81,7 +81,11 @@ const RequiredFormFields = () => {
       </div>
       <div className="bx--row">
         <div className="bx--col-lg-12">
-          <CodeDisplay codeType="multi" codeDescription="Required Text Coding">
+          <CodeDisplay
+            id="required-text"
+            codeType="multi"
+            codeDescription="Required Text Coding"
+          >
             {`
 <Fragment>
   All required fields are marked <span className="hidden">required</span>
@@ -108,7 +112,11 @@ const RequiredFormFields = () => {
 
       <div className="bx--row">
         <div className="bx--col-lg-12">
-          <CodeDisplay codeType="multi" codeDescription="Required Label Coding">
+          <CodeDisplay
+            id="required-label"
+            codeType="multi"
+            codeDescription="Required Label Coding"
+          >
             {`
 <div className={labelColClasses}>
   <label id={'id-label'} htmlFor={id} className={labelClasses}>
