@@ -46,18 +46,30 @@ const AdaptableOverview = () => {
         AAA). 508 regulations require that all pages conform to both A and AA
         only.
       </p>
-      <h3>1.3.1 Info and Relationships (Level A)</h3>
+      <h3>
+        <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>
+          1.3.1 Info and Relationships (Level A)
+        </Link>
+      </h3>
       <p>
         Information, structure and relationships conveyed through a visual
         presentation can be programmatically determined or available through
         text.
       </p>
-      <h3>1.3.2 Meaningful Sequence (Level A)</h3>
+      <h3>
+        <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_MEANINGFUL}>
+          1.3.2 Meaningful Sequence (Level A)
+        </Link>
+      </h3>
       <p>
         When the sequence in which content is presented affects its meaning, a
         correct reading sequence can be programmatically determined.
       </p>
-      <h3>1.3.3 Sensory Characteristics (Level A)</h3>
+      <h3>
+        <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_SENSORY}>
+          1.3.3 Sensory Characteristics (Level A)
+        </Link>
+      </h3>
       <p>
         Instructions provided for understanding and operating content do not
         rely solely on sensory characteristics of components such as shape,

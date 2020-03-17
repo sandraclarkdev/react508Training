@@ -8,11 +8,15 @@ const CSSOverview = () => {
       <p>
         All visual presentation that can be accommodated in CSS should be. This
         separates the presentation from the structure in a way most compatible
-        with AT. This is not to say that AT doesn&apos;t interact with CSS at
-        all, (it does read it and honors &#34;display:none&#34; and
-        &#34;visibility:hidden&#34; by hiding the content with those styles),
-        but for the most part, we can create our pages so that HTML provides the
-        structure and semantics and CSS displays them.
+        with AT. This is not to say that{' '}
+        <abbr title="Accessible Technology" aria-label="Accessible Technology">
+          AT
+        </abbr>{' '}
+        doesn&apos;t interact with CSS at all, (it does read it and honors
+        &#34;display:none&#34; and &#34;visibility:hidden&#34; by hiding the
+        content with those styles), but for the most part, we can create our
+        pages so that HTML provides the structure and semantics and CSS displays
+        them.
       </p>
       <p>
         This means that we care more about how our page is initially structured

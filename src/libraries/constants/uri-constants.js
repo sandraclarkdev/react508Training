@@ -30,6 +30,7 @@ const PATHS = {
   URI_OPERABLE_TIME: 'operable/2_2',
   URI_OPERABLE_SEIZURE: 'operable/2_3',
   URI_OPERABLE_NAVIGABLE: 'operable/2_4',
+  URI_OPERABLE_NAVIGABLE_BYPASS: 'operable/2_4/2_4_1',
 
   // UNDERSTANDABLE
   URI_UNDERSTANDABLE: '/understandable',

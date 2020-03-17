@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import { Accordion, AccordionItem } from 'carbon-components-react';
 
 import { RequiredFormFields, EmphasizedText } from './techniques';
+import uriConstants from 'libraries/constants/uri-constants';
 
 const SemanticOverview = () => {
   return (
@@ -11,15 +13,32 @@ const SemanticOverview = () => {
         Almost every structural element within the HTML specification is there
         to add semantic meaning and structure to web content. Those items
         aren&apos;t there just to aid in visual changes, they allow screen
-        readers, braille translators and other AT to know they must change the
-        way something is perceived to add that meaning.
+        readers, braille translators and other{' '}
+        <abbr title="Accessible Technology" aria-label="Accessible Technology">
+          AT
+        </abbr>{' '}
+        to know they must change the way something is perceived to add that
+        meaning.
       </p>
       <p>
         Appropriate semantic elements aid in emphasizing the meaning of the
         content. As well, relationships between items of content can also be
         indicated through this semantic markup. Relationships between headers,
-        or table cells. AT can indicate that information by linking it or using
-        a different voice or pitch in a screen reader for example.
+        or table cells.{' '}
+        <abbr title="Accessible Technology" aria-label="Accessible Technology">
+          AT
+        </abbr>{' '}
+        can indicate that information by linking it or using a different voice
+        or pitch in a screen reader for example.
+      </p>
+      <p>
+        &lt;div /&gt; and &lt;span /&gt; are considered non-semantic elements
+        and should only be used when there isn't an appropriate semantic tag.
+        For more information on this, see{' '}
+        <Link to={uriConstants.URI_PERCEIVABLE_ADAPTABLE_INFO_REGIONS}>
+          Regions
+        </Link>
+        .
       </p>
 
       <h5>Color Cues</h5>
@@ -55,7 +74,14 @@ const SemanticOverview = () => {
           <p>
             We tend to think about emphasizing text via visual cues only. But
             HTML allows us to emphasize text via specific HTML tags which will
-            allow AT to also emphasize by either using a different physical
+            allow{' '}
+            <abbr
+              title="Accessible Technology"
+              aria-label="Accessible Technology"
+            >
+              AT
+            </abbr>{' '}
+            to also emphasize by either using a different physical
             representation or possibly changing a voice or audio cue to give
             auditory emphasis as well.
           </p>

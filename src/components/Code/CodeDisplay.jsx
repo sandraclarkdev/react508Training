@@ -5,7 +5,7 @@ import { CodeSnippet } from 'carbon-components-react';
 import { AnchorLink } from 'components/Links';
 
 const CodeDisplay = props => {
-  const { codeDescription, codeType, children, id } = props;
+  const { codeDescription, codeType, children, exampleNumber, id } = props;
 
   if (codeType === 'inline') {
     return <CodeSnippet type="inline">{children}</CodeSnippet>;
@@ -14,11 +14,11 @@ const CodeDisplay = props => {
     return (
       <div>
         <p className="hidden">
-          {`Example ${codeDescription}`}
+        {`Example ${exampleNumber} ${codeDescription}`}
           <AnchorLink href={`#skip-${id}`} title="Skip Code Example" />
         </p>
         <p aria-hidden="true">
-          <strong>Example</strong>
+          <strong>Example {exampleNumber}</strong>
         </p>
         <CodeSnippet type="multi">{children}</CodeSnippet>
         <span id={`skip-${id}`}> </span>
@@ -28,11 +28,11 @@ const CodeDisplay = props => {
   return (
     <div>
       <p className="hidden">
-        {`${codeDescription}`}
+        {`Example ${exampleNumber} ${codeDescription}`}
         <AnchorLink href={`#skip-${id}`} title="Skip Code Example" />
       </p>
       <p aria-hidden="true">
-        <strong>Example</strong>
+      <strong>Example {exampleNumber}</strong>
       </p>
       <CodeSnippet type="single">{children}</CodeSnippet>
       <span id={`skip-${id}`}> </span>
@@ -45,10 +45,12 @@ CodeDisplay.propTypes = {
   codeType: PropTypes.string,
   children: PropTypes.shape({}).isRequired,
   id: PropTypes.string.isRequired,
+  exampleNumber: PropTypes.number,
 };
 
 CodeDisplay.defaultProps = {
   codeDescription: null,
   codeType: 'single',
+  exampleNumber: null,
 };
 export default CodeDisplay;

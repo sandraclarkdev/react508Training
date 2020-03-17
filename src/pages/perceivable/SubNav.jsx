@@ -12,7 +12,12 @@ import URIS from 'libraries/constants/uri-constants';
 
 const PerceivableSubNav = () => {
   return (
-    <SideNav defaultExpanded isChildOfHeader={false} large>
+    <SideNav
+      defaultExpanded
+      isChildOfHeader={false}
+      large
+      aria-label="Perceivable Side"
+    >
       <SideNavItems>
         <SideNavItem>Perceivable</SideNavItem>
         <SideNavLink href={URIS.URI_PERCEIVABLE}>Overview</SideNavLink>

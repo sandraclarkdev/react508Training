@@ -63,7 +63,7 @@ const InfoRelationships = () => {
       <ul className="item-link-nav">
         <li>
           <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_CONTROLS}>
-            Controls
+            Controls and Icons
           </Link>
         </li>
         <li>

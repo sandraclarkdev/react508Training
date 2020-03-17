@@ -32,6 +32,7 @@ const StrongText = () => {
           id="strong-em"
           codeType="single"
           codeDescription="Example of Strong and Emphasis tags"
+          exampleNumber={1}
         >{`
 We <strong>Passed</strong> the <em>IQIES</em> 508 Testing!
               `}</CodeDisplay>
@@ -59,6 +60,7 @@ We <strong>Passed</strong> the <em>IQIES</em> 508 Testing!
           id="nested-strong"
           codeType="single"
           codeDescription="Example of nested Strong and Emphasis tags"
+          exampleNumber={2}
         >{`
 We can nest <strong>strong and em tags, <em>But what type of emphasis are we trying to convey when we do that?</em></strong>
                `}</CodeDisplay>

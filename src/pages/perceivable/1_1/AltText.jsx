@@ -8,10 +8,13 @@ const AltText = () => {
       <h1>1.1 - Text Alternatives</h1>
       <p>
         The purpose of the text alternatives guideline is to make sure that all
-        relevant non-text content is available in a way that allows AT render it
-        in the way best suited to a user. This can be visually, auditorally
-        (screen readers) or tactically (braille). If the non-text content is not
-        relevant to the page at all, it should be hidden from AT.
+        relevant non-text content is available in a way that allows{' '}
+        <abbr title="Accessible Technology" aria-label="Accessible Technology">
+          AT
+        </abbr>{' '}
+        render it in the way best suited to a user. This can be visually,
+        auditorally (screen readers) or tactically (braille). If the non-text
+        content is not relevant to the page at all, it should be hidden from AT.
       </p>
       <h2>Success Criteria</h2>
       <p>

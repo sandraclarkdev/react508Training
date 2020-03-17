@@ -85,6 +85,7 @@ const RequiredFormFields = () => {
             id="required-text"
             codeType="multi"
             codeDescription="Required Text Coding"
+            exampleNumber={1}
           >
             {`
 <Fragment>
@@ -116,6 +117,7 @@ const RequiredFormFields = () => {
             id="required-label"
             codeType="multi"
             codeDescription="Required Label Coding"
+            exampleNumber={2}
           >
             {`
 <div className={labelColClasses}>

@@ -11,9 +11,13 @@ const AsciiDescription = () => {
       <p>
         While Ascii Art isn&apos;t used as much as it used to be, there are
         still techniques that are required to fully expose them to AT. When it
-        is used, it can be very confusing to those using AT such as screen or
-        braille readers. The basic technique is to have a text explanation of
-        what the picture is and a link to skip the picture altogether
+        is used, it can be very confusing to those using{' '}
+        <abbr title="Accessible Technology" aria-label="Accessible Technology">
+          AT
+        </abbr>{' '}
+        such as screen or braille readers. The basic technique is to have a text
+        explanation of what the picture is and a link to skip the picture
+        altogether
       </p>
       <div>
         <p>
@@ -31,6 +35,7 @@ const AsciiDescription = () => {
         id="ascii-image"
         codeType="multi"
         codeDescription="Code for ASCII Art Skip."
+        exampleNumber={1}
       >
         {`
 <p>Figure 1. ASCII Shrug
@@ -55,6 +60,7 @@ const AsciiDescription = () => {
         id="skip-aria-hidden"
         codeType="multi"
         codeDescription="Code for hiding ASCII art via aria-hidden."
+        exampleNumber={2}
       >
         {`
  <div aria-hidden="true">
