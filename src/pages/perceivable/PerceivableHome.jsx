@@ -63,9 +63,12 @@ const PerceivableHome = () => {
       </div>
       <div className="overview-item">
         <p>
-          <strong>1.3 Adaptable (TBD)</strong> - Adaptable mainly means that
-          content can be presented in different ways. It allows a user to know
-          what the document structure of the content is and that{' '}
+          <strong>
+            <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>1.3 Adaptable </Link>
+          </strong>{' '}
+          - Adaptable mainly means that content can be presented in different
+          ways. It allows a user to know what the document structure of the
+          content is and that{' '}
           <abbr
             title="Accessible Technology"
             aria-label="Accessible Technology"
