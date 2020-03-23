@@ -13,31 +13,41 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   color: #0071bc;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 1.5rem;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 1.3rem;
   line-height: 1.7;
   margin-bottom: 1rem;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 1.2rem;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: 1.2rem;
   font-style: italic;
   margin: 1.1em 0;
 }
 
-h5 {
+h5,
+.h5 {
   margin: 1.1em 0;
 }
 form {
@@ -45,23 +55,51 @@ form {
   margin: 1rem 0;
   padding: 1rem;
 }
+.list {
+  margin-left: 2rem;
+  li {
+    margin: 0.5rem 0;
+  }
+}
+ol {
+  counter-reset: list-counter;
+  list-style-position: outside;
+  margin-left: 1rem;
+
+  li {
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+    margin-left: -1rem;
+    padding-left: 2rem;
+    text-indent: -2rem;
+    &::before {
+      content: counter(list-counter, decimal) ')';
+      counter-increment: list-counter;
+      font-weight: bold;
+      margin-right: 1.25rem;
+    }
+  }
+}
 
 p {
   line-height: 1.55;
   margin: 0.5rem 0;
 }
+br {
+  clear: both;
+}
 .btn {
   cursor: pointer;
+}
+.btn-search {
+  padding: 0.075rem 0.75rem;
 }
 
 .required-field {
   color: rgba(255, 0, 0, 0.514);
   font-size: 101%;
 }
-.label-right {
-  padding-right: 1rem;
-  text-align: right;
-}
+
 #main-top {
   margin: 1rem;
 }
@@ -90,7 +128,8 @@ blockquote {
     content: '"';
   }
 }
-sup, sub{
+sup,
+sub {
   font-size: 0.8rem;
   position: relative;
 }
