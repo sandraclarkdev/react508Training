@@ -30,10 +30,10 @@ const CombinedLongShortText = () => {
         width="25%"
         src={`${process.env.PUBLIC_URL}/assets/images/WebBrowserUsage.png`}
         alt="Web Browser Shares"
-        aria-describedBy="web-browser-detail"
+        aria-describedby="web-browser-detail"
       />
-      <p id="web-browser-detail" className="sr-only">
-        Web Browser usage shows the following:
+      <div id="web-browser-detail" className="sr-only">
+        Web Browser usage shows the following: <br />
         <dl>
           <dt>Chrome</dt>
           <dd>29.03% </dd>
@@ -50,7 +50,7 @@ const CombinedLongShortText = () => {
           <dt>Other</dt>
           <dd>4.46%</dd>
         </dl>
-      </p>
+      </div>
       <CodeDisplay
         id="long-desc"
         codeType="multi"
@@ -61,10 +61,10 @@ const CombinedLongShortText = () => {
   width="25%"
   src='assets/images/WebBrowserUsage.png'}
   alt="Web Browser Shares"
-  aria-describedBy="web-browser-detail"
+  aria-describedby="web-browser-detail"
 />
-<p id="web-browser-detail" className="sr-only">
-  Web Browser usage shows the following:
+<div id="web-browser-detail" className="sr-only">
+  Web Browser usage shows the following:<br />
     <dl>
     <dt>Chrome</dt>
     <dd>29.03% </dd>
@@ -81,7 +81,7 @@ const CombinedLongShortText = () => {
     <dt>Other</dt>
     <dd>4.46%</dd>
   </dl>
-</p>
+</div>
 `}
       </CodeDisplay>
     </Fragment>

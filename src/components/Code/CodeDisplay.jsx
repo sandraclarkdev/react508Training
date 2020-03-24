@@ -13,10 +13,10 @@ const CodeDisplay = props => {
   if (codeType === 'multi') {
     return (
       <div>
-        <p className="sr-only">
-        {`Example ${exampleNumber} ${codeDescription}`}
+        <div className="sr-only">
+        <p>{`Example ${exampleNumber} ${codeDescription}`}</p>
           <AnchorLink href={`#skip-${id}`} title="Skip Code Example" />
-        </p>
+        </div>
         <p aria-hidden="true">
           <strong>Example {exampleNumber}</strong>
         </p>
@@ -27,10 +27,10 @@ const CodeDisplay = props => {
   }
   return (
     <div>
-      <p className="sr-only">
-        {`Example ${exampleNumber} ${codeDescription}`}
+      <div className="sr-only">
+        <p>{`Example ${exampleNumber} ${codeDescription}`}</p>
         <AnchorLink href={`#skip-${id}`} title="Skip Code Example" />
-      </p>
+      </div>
       <p aria-hidden="true">
       <strong>Example {exampleNumber}</strong>
       </p>
@@ -43,7 +43,7 @@ const CodeDisplay = props => {
 CodeDisplay.propTypes = {
   codeDescription: PropTypes.string,
   codeType: PropTypes.string,
-  children: PropTypes.shape({}).isRequired,
+  children: PropTypes.oneOfType([PropTypes.shape({}), PropTypes.string]).isRequired,
   id: PropTypes.string.isRequired,
   exampleNumber: PropTypes.number,
 };

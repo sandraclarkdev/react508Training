@@ -1,9 +1,5 @@
 import React, { Fragment } from 'react';
-import {
-  ComboBox,
-  MultiSelect,
-  MultiSelectProps,
-} from 'carbon-components-react';
+import { ComboBox, MultiSelect } from 'carbon-components-react';
 import CodeDisplay from 'components/Code/CodeDisplay';
 
 const items = [

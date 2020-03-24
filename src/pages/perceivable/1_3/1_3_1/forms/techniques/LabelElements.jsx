@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 
-import CodeDisplay from 'components/Code/CodeDisplay';
-
 const LabelElements = () => {
   return (
     <Fragment>

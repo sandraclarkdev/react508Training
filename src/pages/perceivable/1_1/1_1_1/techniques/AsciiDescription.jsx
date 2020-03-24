@@ -20,15 +20,15 @@ const AsciiDescription = () => {
         altogether
       </p>
       <div>
-        <p>
-          Figure 1. ASCII Shrug
+        <div>
+          <div>Figure 1. ASCII Shrug</div>
           <AnchorLink href="#skipShrug" className="sr-only">
-            {`  `}Skip Ascii Image
+            Skip Ascii Image
           </AnchorLink>
-        </p>
-        <p>
+        </div>
+        <div>
           <pre> ¯\_(ツ)_/¯ </pre>
-        </p>
+        </div>
         <span id="skipShrug"> </span>
       </div>
       <CodeDisplay
@@ -51,10 +51,11 @@ const AsciiDescription = () => {
       </CodeDisplay>
       <p> another way to do it would be to hide the entire image from AT</p>
       <div aria-hidden="true">
-        <p>
+        <div>
           Figure 1. ASCII Shrug {'  '}
+          <br />
           <pre> ¯\_(ツ)_/¯ </pre>
-        </p>
+        </div>
       </div>
       <CodeDisplay
         id="skip-aria-hidden"

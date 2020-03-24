@@ -25,7 +25,7 @@ const requiredSVGCheck = (props, propName, componentName) => {
       `Either path/viewBox or width/height is required by ${componentName}`,
     );
   }
-  if (!props.viewBox || (!props.path && props.viewBox)) {
+  if (props.viewBox && (!props.path && props.viewBox)) {
     return new Error(`Path and ViewBox are required together`);
   }
 
