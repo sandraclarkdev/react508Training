@@ -13,7 +13,7 @@ function App() {
         <MainRoutes />
       </div>
       <div>
-        <span className="hidden" id="openNewWindow">
+        <span className="sr-only" id="openNewWindow">
           Opens in a new Window
         </span>
       </div>

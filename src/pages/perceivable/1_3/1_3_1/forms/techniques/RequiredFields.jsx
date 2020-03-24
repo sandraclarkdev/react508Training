@@ -6,7 +6,7 @@ const RequiredFields = () => {
   return (
     <Fragment>
       Most of our required fields use a a red <span aria-hidden>*</span>{' '}
-      <span className="hidden">asterisk</span> in the label for our sighted
+      <span className="sr-only">asterisk</span> in the label for our sighted
       users. We also need to use the aria-required attribute within the form
       controls themselves to make sure that the fact a field is required is
       available in an obvious way for{' '}

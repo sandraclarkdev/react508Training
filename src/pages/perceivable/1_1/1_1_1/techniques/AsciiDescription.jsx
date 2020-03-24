@@ -22,7 +22,7 @@ const AsciiDescription = () => {
       <div>
         <p>
           Figure 1. ASCII Shrug
-          <AnchorLink href="#skipShrug" className="hidden">
+          <AnchorLink href="#skipShrug" className="sr-only">
             {`  `}Skip Ascii Image
           </AnchorLink>
         </p>
@@ -39,7 +39,7 @@ const AsciiDescription = () => {
       >
         {`
 <p>Figure 1. ASCII Shrug
-  <AnchorLink href="#skipShrug" className="hidden">
+  <AnchorLink href="#skipShrug" className="sr-only">
     Skip Ascii Image
     </AnchorLink>
 </p>

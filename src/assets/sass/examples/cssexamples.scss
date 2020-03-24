@@ -38,6 +38,15 @@
   }
 }
 
+span {
+  &.insertion {
+    text-decoration: underline;
+  }
+  &.deletion {
+    text-decoration: line-through;
+  }
+}
+
 table {
   border: 1px solid #ccc;
   border-collapse: collapse;
@@ -227,6 +236,37 @@ form {
       position: relative;
       text-align: left;
       top: 0.4rem;
+    }
+  }
+}
+
+dl {
+  &.form {
+    margin: 1rem;
+    dt,
+    dd {
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+    dt {
+      clear: both;
+      display: inline-block;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      padding-right: 1rem;
+      text-align: right;
+      width: 22%;
+      &::after {
+        content: ':';
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+    dd {
+      display: inline-block;
+      margin-right: 5px;
     }
   }
 }

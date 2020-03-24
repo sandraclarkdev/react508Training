@@ -9,7 +9,7 @@ RequiredFieldsText.propTypes = {
 RequiredFieldsText.defaultProps = {
   text: (
     <Fragment>
-      All required fields are marked <span className="hidden">required</span>
+      All required fields are marked <span className="sr-only">required</span>
       <span aria-hidden="true">
         {' '}
         with an asterisk (<span className="required-field">*</span>)

@@ -53,7 +53,7 @@ const TableSummary = () => {
           </tr>
         </tbody>
       </table>
-      <div id="table-description" className="hidden">
+      <div id="table-description" className="sr-only">
         Table displays different toddler toys with columns detailing the color
         and shape.
       </div>
@@ -87,7 +87,7 @@ const TableSummary = () => {
     </tr>
   </tbody>
 </table>
-<div id="table-description" className="hidden">
+<div id="table-description" className="sr-only">
   Table displays different toddler toys with columns detailing the color
   and shape.
 </div>

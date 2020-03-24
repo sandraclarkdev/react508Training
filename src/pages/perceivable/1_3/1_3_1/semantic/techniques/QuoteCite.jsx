@@ -8,8 +8,8 @@ const QuoteCite = () => {
       <div className="bx--row">
         <div className="bx--col-lg-12">
           <p>
-            There are three different tags that work with text to define
-            quotations and citations. They are:
+            There are tags that work with text to define quotations and
+            citations. They are:
           </p>
           <p>
             <strong>&lt;blockquote /&gt;</strong> - A way of emphasizing longer
@@ -39,7 +39,7 @@ const QuoteCite = () => {
               Accessibility is all about removing barriers and providing the
               benefits of technology for everyone.
             </p>
-            <cite>~ Steve Ballmer</cite>
+            <cite >~ Steve Ballmer</cite>
           </blockquote>
           <CodeDisplay
             id="quote-cite"

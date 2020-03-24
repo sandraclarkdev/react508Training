@@ -32,7 +32,7 @@ const CombinedLongShortText = () => {
         alt="Web Browser Shares"
         aria-describedBy="web-browser-detail"
       />
-      <p id="web-browser-detail" className="hidden">
+      <p id="web-browser-detail" className="sr-only">
         Web Browser usage shows the following:
         <dl>
           <dt>Chrome</dt>
@@ -63,7 +63,7 @@ const CombinedLongShortText = () => {
   alt="Web Browser Shares"
   aria-describedBy="web-browser-detail"
 />
-<p id="web-browser-detail" className="hidden">
+<p id="web-browser-detail" className="sr-only">
   Web Browser usage shows the following:
     <dl>
     <dt>Chrome</dt>

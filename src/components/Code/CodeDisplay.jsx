@@ -13,7 +13,7 @@ const CodeDisplay = props => {
   if (codeType === 'multi') {
     return (
       <div>
-        <p className="hidden">
+        <p className="sr-only">
         {`Example ${exampleNumber} ${codeDescription}`}
           <AnchorLink href={`#skip-${id}`} title="Skip Code Example" />
         </p>
@@ -27,7 +27,7 @@ const CodeDisplay = props => {
   }
   return (
     <div>
-      <p className="hidden">
+      <p className="sr-only">
         {`Example ${exampleNumber} ${codeDescription}`}
         <AnchorLink href={`#skip-${id}`} title="Skip Code Example" />
       </p>

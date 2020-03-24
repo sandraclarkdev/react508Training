@@ -50,7 +50,7 @@ const CSSOverview = () => {
 
       <div className="bx--row">
         <div className="bx--col-lg-12">
-          <h2 className="hidden">Summary Bar</h2>
+          <h2 className="sr-only">Summary Bar</h2>
           <div className="summary-bar-enclosure">
             <div className="summary-bar">
               <div className="summary-bar-item">
@@ -84,7 +84,7 @@ const CSSOverview = () => {
             codeType="multi"
             codeDescription="Example of Headings styled to text"
           >{`
-<h2 className="hidden">Summary Bar</h2>
+<h2 className="sr-only">Summary Bar</h2>
 <div className="summary-bar-enclosure">
   <div className="summary-bar">
     <div className="summary-bar-item">

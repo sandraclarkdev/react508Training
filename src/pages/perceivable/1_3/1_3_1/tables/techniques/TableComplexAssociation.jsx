@@ -112,7 +112,7 @@ const TableComplexAssociation = () => {
           </tr>
         </tbody>
       </table>
-      <p id="table-desc" className="hidden">
+      <p id="table-desc" className="sr-only">
         Color names for black, blue, and green in multiple languages, grouped by
         language family
       </p>
@@ -202,7 +202,7 @@ const TableComplexAssociation = () => {
     </tr>
   </tbody>
 </table>
-<p id="table-desc" className="hidden">
+<p id="table-desc" className="sr-only">
   Color names for black, blue, and green in multiple languages, grouped by
   language family
 </p>

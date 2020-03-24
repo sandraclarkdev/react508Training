@@ -19,7 +19,7 @@ const TitleAttribute = () => {
         attribute.
       </p>
       <form>
-        <label className="hidden" htmlFor="search">
+        <label className="sr-only" htmlFor="search">
           Search by name, keyword or tag
         </label>
         <input type="search" id="search" name="search" placeholder="Search" />
@@ -39,7 +39,7 @@ const TitleAttribute = () => {
         codeDescription="hidden label associated with a form control."
       >{`
 <form>
-  <label className="hidden" htmlFor="search">
+  <label className="sr-only" htmlFor="search">
     Search by name, keyword or tag
   </label>
   <input type="search" id="search" name="search" placeholder="Search" />
@@ -64,7 +64,7 @@ const TitleAttribute = () => {
         <tbody>
           <tr>
             <td className="center">
-              <label className="hidden" htmlFor="knob-puzzle">
+              <label className="sr-only" htmlFor="knob-puzzle">
                 Choose Knob Puzzle
               </label>
               <input type="checkbox" id="knob-puzzle" name="choose" value="3" />
@@ -75,7 +75,7 @@ const TitleAttribute = () => {
           </tr>
           <tr className="even">
             <td className="center">
-              <label className="hidden" htmlFor="blocks">
+              <label className="sr-only" htmlFor="blocks">
                 Choose Blocks
               </label>
               <input type="checkbox" id="blocks" name="choose" value="2" />
@@ -86,7 +86,7 @@ const TitleAttribute = () => {
           </tr>
           <tr>
             <td className="center">
-              <label className="hidden" htmlFor="cylinders">
+              <label className="sr-only" htmlFor="cylinders">
                 Choose Cylinders
               </label>
               <input type="checkbox" id="cylinders" name="choose" value="1" />
@@ -114,7 +114,7 @@ const TitleAttribute = () => {
   <tbody>
     <tr>
       <td className="center">
-        <label className="hidden" htmlFor="knob-puzzle">
+        <label className="sr-only" htmlFor="knob-puzzle">
           Choose Knob Puzzle
         </label>
         <input type="checkbox" id="knob-puzzle" name="choose" value="3" />
@@ -125,7 +125,7 @@ const TitleAttribute = () => {
     </tr>
     <tr className="even">
       <td className="center">
-        <label className="hidden" htmlFor="blocks">
+        <label className="sr-only" htmlFor="blocks">
           Choose Blocks
         </label>
         <input type="checkbox" id="blocks" name="choose" value="2" />
@@ -136,7 +136,7 @@ const TitleAttribute = () => {
     </tr>
     <tr>
       <td className="center">
-        <label className="hidden" htmlFor="cylinders">
+        <label className="sr-only" htmlFor="cylinders">
           Choose Cylinders
         </label>
         <input type="checkbox" id="cylinders" name="choose" value="1" />

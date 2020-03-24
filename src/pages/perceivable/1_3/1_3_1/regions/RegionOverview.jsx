@@ -29,7 +29,7 @@ const RegionOverview = () => {
         These approaches only add extra capabilities for non-sighted users to
         easily navigate a page. Skip Links are still necessary for sighted
         keyboard users. (covered in 2.4.1 ByPass Blocks{' '}
-        <span className="hidden">Link to come.)</span> )
+        <span className="sr-only">Link to come.)</span> )
       </p>
       <h5>Commonly Used Semantic Elements</h5>
       <p>
@@ -155,7 +155,7 @@ const RegionOverview = () => {
               <h2>Test Example</h2>
               <main aria-label="Perceivable">
                 <div role="search" aria-label="Global Search ">
-                  <label htmlFor="search" className="hidden">
+                  <label htmlFor="search" className="sr-only">
                     Search for Items
                   </label>
                   <input id="search" name="search" type="search" />
@@ -168,7 +168,7 @@ const RegionOverview = () => {
             {`
 <main aria-label="Perceivable"> //Main Region is read, we just add the 'Perceivable' here
   <div role="search" aria-label="Global Search ">
-    <label htmlfor="search" className="hidden">Search for Items</label>
+    <label htmlfor="search" className="sr-only">Search for Items</label>
     <input id="search" name="search" type="search" />
     <button type="button" onClick={handleClick} aria-label="Submit Search">Search</button>
   </div>
@@ -218,7 +218,7 @@ const RegionOverview = () => {
               </p>
             </div>
             {`
- <div role="region" aria-labelledby="heading-description">
+ <div role="region" aria-describedby="heading-description">
   <h3>Heading Name</h3>
   <p id="heading-description">This paragraph gives a description.</p>
 </div>

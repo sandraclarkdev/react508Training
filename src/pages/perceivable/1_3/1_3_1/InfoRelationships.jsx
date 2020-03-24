@@ -54,7 +54,7 @@ const InfoRelationships = () => {
           <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_REGIONS}>Regions</Link>
         </li>
         <li>
-          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_HEADINGs}>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_HEADINGS}>
             Headings
           </Link>
         </li>
@@ -82,15 +82,6 @@ const InfoRelationships = () => {
           <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO_TEXT}>Text</Link>
         </li>
       </ul>
-
-      <h3>
-        What do do when you cannot use semantic structure to convey information
-        and relationships.
-      </h3>
-      <h4>
-        Information in text is conveyed through both structural formatting and
-        text.
-      </h4>
     </Fragment>
   );
 };

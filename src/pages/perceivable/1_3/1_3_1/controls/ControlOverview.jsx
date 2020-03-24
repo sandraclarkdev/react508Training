@@ -109,7 +109,7 @@ const ControlOverview = () => {
           >
             Labeling a ToolTip
             {`
-  <p className="hidden" id="tooltip-descriptor">
+  <p className="sr-only" id="tooltip-descriptor">
   ToolTip for Naming Cats
 </p>
 <div
