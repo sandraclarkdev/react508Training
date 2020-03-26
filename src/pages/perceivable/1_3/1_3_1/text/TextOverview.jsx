@@ -92,8 +92,8 @@ const TextOverview = () => {
           AT
         </abbr>{' '}
         with wording to indicate a text inserted or deleted begin and end. We
-        can't use an aria-label here since the aria-label will over-ride all
-        text within the span.
+        can&apos;t use an aria-label here since the aria-label will over-ride
+        all text within the span.
       </p>
       <CodeDisplay
         codeType="multi"

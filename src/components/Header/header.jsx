@@ -18,19 +18,19 @@ const AppHeader = () => (
       508 React Training
     </HeaderName>
     <HeaderNavigation aria-label="Main Navigation">
-      <HeaderMenuItem element={Link} to="/">
+      <HeaderMenuItem element={Link} to="/" role="menuitem">
         Home
       </HeaderMenuItem>
-      <HeaderMenuItem element={Link} to={URIS.URI_PERCEIVABLE}>
+      <HeaderMenuItem element={Link} to={URIS.URI_PERCEIVABLE} role="menuitem">
         Perceivable
       </HeaderMenuItem>
-      <HeaderMenuItem element={Link} to={URIS.URI_OPERABLE}>
+      <HeaderMenuItem element={Link} to={URIS.URI_OPERABLE} role="menuitem">
         Operable
       </HeaderMenuItem>
-      <HeaderMenuItem element={Link} to={URIS.URI_UNDERSTANDABLE}>
+      <HeaderMenuItem element={Link} to={URIS.URI_UNDERSTANDABLE} role="menuitem">
         Understandable
       </HeaderMenuItem>
-      <HeaderMenuItem element={Link} to={URIS.URI_ROBUST}>
+      <HeaderMenuItem element={Link} to={URIS.URI_ROBUST} role="menuitem">
         Robust
       </HeaderMenuItem>
     </HeaderNavigation>

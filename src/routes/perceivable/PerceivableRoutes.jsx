@@ -10,6 +10,7 @@ import AltText from 'pages/perceivable/1_1/AltText';
 import NonText from 'pages/perceivable/1_1/1_1_1/NonText';
 import AdaptableOverview from 'pages/perceivable/1_3/AdaptableOverview';
 import InfoRelationships from 'pages/perceivable/1_3/1_3_1/InfoRelationships';
+import MeaningfulSequence from 'pages/perceivable/1_3/1_3_2/MeaningfulSequence';
 import { AdaptableInfoRoutes } from 'routes';
 
 const PerceivableRoutes = () => {
@@ -38,6 +39,14 @@ const PerceivableRoutes = () => {
           returnText="Adaptable Overview"
         >
           <InfoRelationships />
+        </ReturnLink>
+      </Route>
+      <Route exact path={URIS.URI_PERCEIVABLE_ADAPTABLE_MEANINGFUL}>
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE}
+          returnText="Adaptable Overview"
+        >
+          <MeaningfulSequence />
         </ReturnLink>
       </Route>
 

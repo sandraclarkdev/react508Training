@@ -18,7 +18,7 @@ const PerceivableSubNav = () => {
       large
       aria-label="Perceivable Side"
     >
-      <SideNavItems>
+      <SideNavItems role="menu">
         <SideNavItem>Perceivable</SideNavItem>
         <SideNavLink href={URIS.URI_PERCEIVABLE}>Overview</SideNavLink>
         <SideNavMenu title="1.1 Text Alternatives" defaultExpanded isActive>
@@ -41,12 +41,15 @@ const PerceivableSubNav = () => {
             Understanding Time Based Media (TBD)
           </SideNavMenuItem>
         </SideNavMenu> */}
-        <SideNavMenu title="1.3 Adaptable">
+        <SideNavMenu title="1.3 Adaptable" role="menu">
           <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE}>
             Understanding Adaptable
           </SideNavMenuItem>
           <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>
             1.3.1 Info and Relationships
+          </SideNavMenuItem>
+          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_MEANINGFUL}>
+            1.3.2 Meaningful Sequence
           </SideNavMenuItem>
         </SideNavMenu>
         {/* <SideNavMenu title="1.4 Distinguishable (TBD)">

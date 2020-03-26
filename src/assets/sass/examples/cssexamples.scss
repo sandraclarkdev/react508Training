@@ -1,4 +1,13 @@
 /* stylelint-disable selector-no-qualifying-type, selector-max-compound-selectors, max-nesting-depth */
+.wide-spacing {
+  letter-spacing: 0.7rem;
+}
+.supporting-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-left: 7%;
+  width: 70%;
+}
 .summary-bar-enclosure {
   align-items: stretch !important;
   display: flex !important;
@@ -267,6 +276,35 @@ dl {
     dd {
       display: inline-block;
       margin-right: 5px;
+    }
+  }
+  &.list {
+    position: relative;
+    top: 1rem;
+
+    dt {
+      clear: both;
+      float: left;
+      font-weight: bold;
+      margin: 1rem 0;
+      width: 13%;
+      &::after {
+        content: ':';
+      }
+    }
+    dd {
+      float: left;
+      margin-top: 1rem;
+      width: 75%;
+      img {
+        display: block;
+        margin: 1rem 0 1rem 12%;
+        width: 75%;
+        &.large {
+          margin-left: 0;
+          width: auto;
+        }
+      }
     }
   }
 }
