@@ -94,10 +94,11 @@ const LabelPositioning = () => {
       <form className="labels-top">
         <fieldset>
           <label nested>
-            First Name <input type="text" id="firstName2" name="firstName" />
+            <span>First Name</span>
+            <input type="text" id="firstName2" name="firstName" />
           </label>
           <label nested>
-            Last Name
+          <span>Last Name</span>
             <input type="text" id="lastName2" name="lastName" />
           </label>
           <br />
@@ -134,10 +135,11 @@ const LabelPositioning = () => {
  <form className="labels-top">
   <fieldset>
     <label nested>
-      First Name <input type="text" id="firstName2" name="firstName" />
+    <span>First Name</span>
+    <input type="text" id="firstName2" name="firstName" />
     </label>
     <label nested>
-      Last Name
+      <span>Last Name</span>
       <input type="text" id="lastName2" name="lastName" />
     </label>
     <br />

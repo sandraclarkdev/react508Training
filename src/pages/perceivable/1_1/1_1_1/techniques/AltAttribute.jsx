@@ -19,7 +19,7 @@ const AltAttribute = () => {
         />
       </p>
       <p>Good: An Adult hand lightly clasping a baby&lsquo;s fist.</p>
-      <p>Bad: Black and White Image - Kids</p>
+      <p>Bad: Black and White Image - Hands</p>
       <CodeDisplay
         id="alt-text"
         codeType="multi"

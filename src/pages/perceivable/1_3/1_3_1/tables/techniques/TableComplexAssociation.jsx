@@ -29,7 +29,7 @@ const TableComplexAssociation = () => {
         as well.
       </p>
       <p>This example also adds captioning and summary information.</p>
-      <h2>Associating Cells (Simple) Example</h2>
+      <h2>Associating Cells (Complex) Example</h2>
       <table className="complex-table" aria-describedby="table-desc">
         <caption>Color Names in Multiple Languages (Romance vs Celtic)</caption>
         <thead>

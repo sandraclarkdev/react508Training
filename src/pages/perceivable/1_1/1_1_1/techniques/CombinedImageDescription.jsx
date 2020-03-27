@@ -18,7 +18,8 @@ const CombinedImageDescription = () => {
 
       <div>
         <button type="button" className="btn-link">
-          <FontAwesomeIcon icon={faCoffee} /> Get your Coffee Here
+          <FontAwesomeIcon icon={faCoffee} aria-hidden="true" /> Get your Coffee
+          Here
         </button>
       </div>
       <CodeDisplay
