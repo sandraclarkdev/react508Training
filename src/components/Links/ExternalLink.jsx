@@ -7,8 +7,7 @@ const ExternalLink = props => {
   const { to, children } = props;
   return (
     <a href={to} target="blank" aria-describedby="openNewWindow">
-      {children}{' '}
-      <FontAwesomeIcon icon={faExternalLinkAlt} />
+      {children} <FontAwesomeIcon icon={faExternalLinkAlt} />
     </a>
   );
 };

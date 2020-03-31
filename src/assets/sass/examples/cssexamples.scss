@@ -1,0 +1,336 @@
+/* stylelint-disable selector-no-qualifying-type, selector-max-compound-selectors, max-nesting-depth */
+.wide-spacing {
+  letter-spacing: 0.7rem;
+}
+.supporting-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-left: 7%;
+  width: 70%;
+}
+.summary-bar-enclosure {
+  align-items: stretch !important;
+  display: flex !important;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.summary-bar {
+  align-items: stretch !important;
+  min-height: 80px;
+}
+
+.summary-bar-item {
+  border-right: 1px solid #d6d7d9;
+
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  &:first-of-type {
+    padding-left: 0;
+  }
+  h3 {
+    color: #5b616b;
+    font-size: 0.875rem;
+    margin: 0;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 0.875rem;
+    line-height: 1;
+    margin: 0 0 0.5rem;
+  }
+}
+
+span {
+  &.insertion {
+    text-decoration: underline;
+  }
+  &.deletion {
+    text-decoration: line-through;
+  }
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  width: 90%;
+
+  caption {
+    caption-side: top;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+tr {
+  th {
+    border: thin solid #ccc;
+    padding: 1rem;
+    text-align: bottom;
+  }
+  td {
+    border: thin solid #ccc;
+    padding: 0.5rem;
+
+    word-wrap: break-word;
+    &.center {
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+  .even {
+    background-color: $color-gray-light;
+  }
+}
+thead th {
+  background-color: $color-gray-light;
+  border-style: none;
+  font-weight: 900;
+}
+
+// Complex Table Example
+.complex-table {
+  td,
+  th {
+    border: 1px solid $color-gray-light;
+    &.separate {
+      border-left: 0.15em solid #000 !important;
+    }
+  }
+
+  tr {
+    th:first-child,
+    td:first-child {
+      border-left: 1px solid #000;
+    }
+    th:last-child,
+    td:last-child {
+      border-right: 1px solid #000;
+    }
+  }
+  tr:last-child {
+    th,
+    td {
+      border-bottom: 1px solid #000 !important;
+    }
+    th:first-child,
+    td:first-child {
+      border-left: 1px solid #000;
+    }
+    th:last-child,
+    td:last-child {
+      border-right: 1px solid #000;
+    }
+  }
+
+  .grouped-headers {
+    tr:first-child th {
+      border-bottom: 1px solid #000 !important;
+      border-top: 1px solid #000 !important;
+    }
+    th {
+      background-color: $color-primary;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .secondary-headers {
+    th {
+      background-color: $color-primary-alt-light;
+      text-align: center;
+    }
+  }
+}
+
+// Form Labels Left - Checkbox Right
+form {
+  border: 0 none;
+  fieldset {
+    &.no-borders {
+      border: 0 none;
+    }
+    &.bordered {
+      border: 1px solid #ccc;
+      margin: 1rem;
+      padding: 1rem;
+      legend {
+        float: left;
+        font-weight: bold;
+        position: relative;
+        top: -0.9rem;
+        &.h4 {
+          font-size: 0.9rem;
+          font-style: normal;
+          margin: 0;
+        }
+      }
+      &.above {
+        margin-top: 2.5rem;
+        position: relative;
+        legend {
+          position: absolute;
+          top: -1.5rem;
+        }
+      }
+    }
+  }
+  &.labels-left {
+    label {
+      float: left;
+      font-weight: bold;
+      margin-right: 1rem;
+      position: relative;
+      text-align: right;
+      top: 0.25rem;
+      width: 25%;
+      &.position-right {
+        float: inherit;
+        margin-right: 0;
+        text-align: left;
+      }
+    }
+
+    input {
+      float: left;
+      margin-bottom: 0.3rem;
+    }
+    input[type='checkbox'],
+    input[type='radio'] {
+      float: left;
+      margin-left: 19%;
+      position: relative;
+      text-align: left;
+      top: 0.4rem;
+      width: 10%;
+    }
+  }
+
+  // Form Labels top, checkbox right
+  &.labels-top {
+    label {
+      float: left;
+      font-weight: bold;
+      height: 2rem;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+      position: relative;
+      width: 40%;
+      span {
+        float: left;
+        font-weight: bold;
+      }
+      &.position-right {
+        clear: none;
+        float: left;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-left: -6rem;
+        margin-right: 1rem;
+        position: relative;
+        text-align: right;
+        top: 0.25rem;
+        width: 25%;
+      }
+
+      input {
+        float: left;
+        left: -4.5rem;
+        position: relative;
+        top: 1.25rem;
+      }
+    }
+    input[type='checkbox'],
+    input[type='radio'] {
+      float: left;
+      margin-bottom: 0.3rem;
+      padding-left: 2rem;
+      position: relative;
+      text-align: left;
+      top: 0.4rem;
+    }
+  }
+  &.search-box {
+    float: left;
+    width: 45%;
+    input {
+      border-color: rgba(255, 166, 0, 0.986);
+    }
+    .btn-primary {
+      background-color: rgba(255, 166, 0, 0.986);
+    }
+  }
+}
+
+.sensory {
+  float: left;
+  margin-right: 3%;
+  position: relative;
+  top: 2.5rem;
+  width: 45%;
+}
+
+dl {
+  &.form {
+    margin: 1rem;
+    dt,
+    dd {
+      float: left;
+      margin: 0;
+      padding: 0;
+    }
+    dt {
+      clear: both;
+      display: inline-block;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      padding-right: 1rem;
+      text-align: right;
+      width: 22%;
+      &::after {
+        content: ':';
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+    dd {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+  &.list {
+    position: relative;
+    top: 1rem;
+
+    dt {
+      clear: both;
+      float: left;
+      font-weight: bold;
+      margin: 1rem 0;
+      width: 13%;
+      &::after {
+        content: ':';
+      }
+    }
+    dd {
+      float: left;
+      margin-top: 1rem;
+      width: 75%;
+      img {
+        display: block;
+        margin: 1rem 0 1rem 12%;
+        width: 75%;
+        &.large {
+          margin-left: 0;
+          width: auto;
+        }
+      }
+    }
+  }
+}

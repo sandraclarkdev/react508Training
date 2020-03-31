@@ -12,30 +12,27 @@ const AnchorLink = props => {
     }
   };
 
-  if (classnames) {
-    return (
-      <div className={classnames}>
-        {' '}
-        <HashLink to={href} scroll={scrollToId(href)}>
-          {children}
-        </HashLink>
-      </div>
-    );
-  }
   return (
-    <HashLink to={href} scroll={scrollToId(href)}>
-      {children}
-    </HashLink>
+    <div className={classnames}>
+      <HashLink to={href} scroll={scrollToId(href)}>
+        {children}
+      </HashLink>
+    </div>
   );
 };
 
 AnchorLink.propTypes = {
   href: PropTypes.string.isRequired,
-  children: PropTypes.shape({}).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({}),
+    PropTypes.arrayOf(PropTypes.shape({})),
+  ]),
   classnames: PropTypes.string,
 };
 
 AnchorLink.defaultProps = {
   classnames: null,
+  children: null,
 };
 export default AnchorLink;

@@ -12,8 +12,13 @@ import URIS from 'libraries/constants/uri-constants';
 
 const PerceivableSubNav = () => {
   return (
-    <SideNav defaultExpanded isChildOfHeader={false} large>
-      <SideNavItems>
+    <SideNav
+      defaultExpanded
+      isChildOfHeader={false}
+      large
+      aria-label="Perceivable Side"
+    >
+      <SideNavItems role="menu">
         <SideNavItem>Perceivable</SideNavItem>
         <SideNavLink href={URIS.URI_PERCEIVABLE}>Overview</SideNavLink>
         <SideNavMenu title="1.1 Text Alternatives" defaultExpanded isActive>
@@ -27,25 +32,34 @@ const PerceivableSubNav = () => {
             href={URIS.URI_PERCEIVABLE_TEXTALT_NONTEXT}
             title="Non Text Content"
           >
-            1.1.1 Non-Text Content
+            1.1.1 Non-Text Content (A)
           </SideNavMenuItem>
         </SideNavMenu>
 
-        <SideNavMenu title="1.2 Time Based Media (TBD)">
+        {/* <SideNavMenu title="1.2 Time Based Media (TBD)">
           <SideNavMenuItem href="javascript:void(0)">
             Understanding Time Based Media (TBD)
           </SideNavMenuItem>
-        </SideNavMenu>
-        <SideNavMenu title="1.3 Adaptable (TBD)">
-          <SideNavMenuItem href="javascript:void(0)">
+        </SideNavMenu> */}
+        <SideNavMenu title="1.3 Adaptable" role="menu">
+          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE}>
             Understanding Adaptable
           </SideNavMenuItem>
+          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>
+            1.3.1 Info and Relationships (A)
+          </SideNavMenuItem>
+          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_MEANINGFUL}>
+            1.3.2 Meaningful Sequence (A)
+          </SideNavMenuItem>
+          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_SENSORY}>
+            1.3.3 Sensory Characteristics (A)
+          </SideNavMenuItem>
         </SideNavMenu>
-        <SideNavMenu title="1.4 Distinguishable (TBD)">
+        {/* <SideNavMenu title="1.4 Distinguishable (TBD)">
           <SideNavMenuItem href="javascript:void(0)">
             Understanding Distinguishable
           </SideNavMenuItem>
-        </SideNavMenu>
+        </SideNavMenu> */}
       </SideNavItems>
     </SideNav>
   );

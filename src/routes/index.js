@@ -1,4 +1,5 @@
 import MainRoutes from './MainRoutes';
-import PerceivableRoutes from './PerceivableRoutes';
+import PerceivableRoutes from './perceivable/PerceivableRoutes';
+import AdaptableInfoRoutes from './perceivable/AdaptableInfoRoutes';
 
-export { MainRoutes, PerceivableRoutes };
+export { MainRoutes, PerceivableRoutes, AdaptableInfoRoutes };
