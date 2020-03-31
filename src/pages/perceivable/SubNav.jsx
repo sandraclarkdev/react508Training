@@ -32,7 +32,7 @@ const PerceivableSubNav = () => {
             href={URIS.URI_PERCEIVABLE_TEXTALT_NONTEXT}
             title="Non Text Content"
           >
-            1.1.1 Non-Text Content
+            1.1.1 Non-Text Content (A)
           </SideNavMenuItem>
         </SideNavMenu>
 
@@ -46,10 +46,13 @@ const PerceivableSubNav = () => {
             Understanding Adaptable
           </SideNavMenuItem>
           <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>
-            1.3.1 Info and Relationships
+            1.3.1 Info and Relationships (A)
           </SideNavMenuItem>
           <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_MEANINGFUL}>
-            1.3.2 Meaningful Sequence
+            1.3.2 Meaningful Sequence (A)
+          </SideNavMenuItem>
+          <SideNavMenuItem href={URIS.URI_PERCEIVABLE_ADAPTABLE_SENSORY}>
+            1.3.3 Sensory Characteristics (A)
           </SideNavMenuItem>
         </SideNavMenu>
         {/* <SideNavMenu title="1.4 Distinguishable (TBD)">

@@ -229,7 +229,7 @@ form {
         clear: none;
         float: left;
         font-weight: bold;
-        margin-bottom:0;
+        margin-bottom: 0;
         margin-left: -6rem;
         margin-right: 1rem;
         position: relative;
@@ -255,6 +255,24 @@ form {
       top: 0.4rem;
     }
   }
+  &.search-box {
+    float: left;
+    width: 45%;
+    input {
+      border-color: rgba(255, 166, 0, 0.986);
+    }
+    .btn-primary {
+      background-color: rgba(255, 166, 0, 0.986);
+    }
+  }
+}
+
+.sensory {
+  float: left;
+  margin-right: 3%;
+  position: relative;
+  top: 2.5rem;
+  width: 45%;
 }
 
 dl {

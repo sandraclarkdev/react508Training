@@ -23,10 +23,10 @@ const HomePage = () => (
       to be as accessible as possible.
     </p>
     <p>
-      The WCAG 2.0 requirement have 4 PRinciples called POUR: Perceivable,
-      Operable, Understandable and Robust. The principles and guidelines are
-      purposefully vague to enable them to be applied to existing and future
-      technology.
+      The WCAG 2.0 requirement have 4 Principles commonly called POUR:
+      Perceivable, Operable, Understandable and Robust. The principles and
+      guidelines are purposefully vague to enable them to be applied to existing
+      and future technology.
     </p>
     <p> I hope this application proves of use.</p>
   </Fragment>

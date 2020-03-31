@@ -11,6 +11,7 @@ import NonText from 'pages/perceivable/1_1/1_1_1/NonText';
 import AdaptableOverview from 'pages/perceivable/1_3/AdaptableOverview';
 import InfoRelationships from 'pages/perceivable/1_3/1_3_1/InfoRelationships';
 import MeaningfulSequence from 'pages/perceivable/1_3/1_3_2/MeaningfulSequence';
+import SensoryOverview from 'pages/perceivable/1_3/1_3_3/SensoryOverview';
 import { AdaptableInfoRoutes } from 'routes';
 
 const PerceivableRoutes = () => {
@@ -49,7 +50,14 @@ const PerceivableRoutes = () => {
           <MeaningfulSequence />
         </ReturnLink>
       </Route>
-
+      <Route exact path={URIS.URI_PERCEIVABLE_ADAPTABLE_SENSORY}>
+        <ReturnLink
+          href={URIS.URI_PERCEIVABLE_ADAPTABLE}
+          returnText="Adaptable Overview"
+        >
+          <SensoryOverview />
+        </ReturnLink>
+      </Route>
       <Route exact path={URIS.URI_PERCEIVABLE_ADAPTABLE}>
         <ReturnLink
           href={URIS.URI_PERCEIVABLE}
