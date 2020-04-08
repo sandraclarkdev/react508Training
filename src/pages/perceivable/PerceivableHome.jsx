@@ -35,12 +35,12 @@ const PerceivableHome = () => {
 
       <h2>Perceivable Guidelines</h2>
       <div className="overview-item">
+        <h3>
+          <Link to={URIS.URI_PERCEIVABLE_TEXTALT}>1.1 Text Alternatives</Link>
+        </h3>
         <p>
-          <strong>
-            <Link to={URIS.URI_PERCEIVABLE_TEXTALT}>1.1 Text Alternatives</Link>
-          </strong>{' '}
-          - Make sure that anything on the page that is not text can be changed
-          to forms people need.
+          Make sure that anything on the page that is not text can be changed to
+          forms people need.
         </p>
         <p>
           <ExternalLink to="https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html">
@@ -49,11 +49,12 @@ const PerceivableHome = () => {
         </p>
       </div>
       <div className="overview-item">
+        <h3>1.2 Time Based Media</h3>
         <p>
-          <strong>1.2 Time Based Media - (TBD)</strong> - Time based media is
-          anything that is embedded on a website that moves, makes noise,
+          <strong>(Not used in IQIES at this time)</strong> - Time based media
+          is anything that is embedded on a website that moves, makes noise,
           displays content synchronized with another element of the site or
-          displays content that changes without user input.{' '}
+          displays content that changes without user input.
         </p>
         <p>
           <ExternalLink to="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html">
@@ -62,11 +63,11 @@ const PerceivableHome = () => {
         </p>{' '}
       </div>
       <div className="overview-item">
+        <h3>
+          <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>1.3 Adaptable </Link>
+        </h3>
         <p>
-          <strong>
-            <Link to={URIS.URI_PERCEIVABLE_ADAPTABLE_INFO}>1.3 Adaptable </Link>
-          </strong>{' '}
-          - Adaptable mainly means that content can be presented in different
+          Adaptable mainly means that content can be presented in different
           ways. It allows a user to know what the document structure of the
           content is and that{' '}
           <abbr
@@ -86,12 +87,16 @@ const PerceivableHome = () => {
         </p>{' '}
       </div>
       <div className="overview-item">
+        <h3>
+          <Link to={URIS.URI_PERCEIVABLE_DISTINGUISHABLE}>
+            1.4 Distinguishable
+          </Link>
+        </h3>
         <p>
-          <strong>1.4 Distinguishable (TBD)</strong> - Distinguishable content
-          is easier to work for all users. The focus is to make the content as
-          easy to perceive such as making sure colors are able to be
-          distinguished, and that for audio, foreground sounds are loud enough
-          to be heard easily over background sounds.
+          Distinguishable content is easier to work for all users. The focus is
+          to make the content as easy to perceive such as making sure colors are
+          able to be distinguished, and that for audio, foreground sounds are
+          loud enough to be heard easily over background sounds.
         </p>
         <p>
           <ExternalLink to="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html">

@@ -11,7 +11,7 @@ import {
   SVGTitle,
 } from './techniques';
 
-const NonText = () => {
+const NonTextOverview = () => {
   return (
     <Fragment>
       <h1>1.1.1 Non Text Content</h1>
@@ -94,4 +94,4 @@ const NonText = () => {
   );
 };
 
-export default NonText;
+export default NonTextOverview;

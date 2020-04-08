@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/label-has-for */
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import requiredIf from 'react-required-if';
 
 const FieldWrapper = props => {
   const {
@@ -66,16 +65,14 @@ const FieldWrapper = props => {
 FieldWrapper.propTypes = {
   children: PropTypes.shape({}).isRequired,
   description: PropTypes.shape({}),
-  id: requiredIf(PropTypes.string, props => props.nested !== true),
+  id: PropTypes.string,
   labelClasses: PropTypes.string,
   labelColClasses: PropTypes.string,
   labelProps: PropTypes.shape({}),
   labelString: PropTypes.string.isRequired,
   nested: PropTypes.bool,
-  nestedLabelProps: requiredIf(
-    PropTypes.shape({}),
-    props => props.nested === true,
-  ),
+  nestedLabelProps: PropTypes.shape({}),
+
   required: PropTypes.bool,
 };
 FieldWrapper.defaultProps = {

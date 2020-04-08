@@ -16,11 +16,11 @@ const HomePage = () => (
       <ExternalLink to="https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=242%2C246&currentsidebar=%23col_overview&versions=2.0#top">
         WCAG 2.0
       </ExternalLink>
-      Many of the requirements are difficult to understand and even harder to
-      know how to implement in an SPA like React (which has its own
-      challenges.). This web application is designed to be accessible in
-      it&#39;s own right, and both explains and implements proper 508 behaviors
-      to be as accessible as possible.
+      . Many of the requirements are difficult to understand and even harder to
+      know how to implement in an Single Page Application such as React (which
+      has its own challenges). This web application is designed to be accessible
+      in it&#39;s own right, and both explains and implements proper 508
+      behaviors to be as accessible as possible.
     </p>
     <p>
       The WCAG 2.0 requirement have 4 Principles commonly called POUR:
